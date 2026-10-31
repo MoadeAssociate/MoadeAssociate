@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Vercel
+.vercel/
+
+# Development & Test Artifacts
+.shots/
+.playwright-mcp/
+.agent/
+
+# OS & Environment
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
+.env.*.local
