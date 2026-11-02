@@ -336,155 +336,179 @@
           
           <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 border-b border-white/10 pb-8">
             <div>
-              <div class="pill-badge mb-4 inline-flex border-white/20 bg-white/10 text-white">
-                <span class="size-2 rounded-full bg-[#F4B400] shadow-[0_0_8px_#F4B400]"></span>
-                <span class="text-xs font-bold uppercase tracking-[0.16em]">WHAT WE DO</span>
+              <div class="pill-badge mb-4 inline-flex border-white/20 bg-white/10 text-white backdrop-blur-md">
+                <span class="size-2 rounded-full bg-[#F4B400] shadow-[0_0_10px_#F4B400]"></span>
+                <span class="text-xs font-bold uppercase tracking-[0.16em]">OUR LEGAL SERVICES</span>
               </div>
-              <h2 class="text-[clamp(2rem,3.8vw,3.2rem)] font-extrabold leading-[1.1] tracking-tight text-white">
-                Trusted Expertise
+              <h2 class="text-[clamp(2.1rem,4vw,3.4rem)] font-extrabold leading-[1.08] tracking-tight text-white">
+                Trusted <span class="text-[#F4B400]">Expertise</span>
               </h2>
-              <p class="mt-3 max-w-[54ch] text-sm sm:text-base text-white font-normal">
+              <p class="mt-3.5 max-w-[54ch] text-sm sm:text-base text-white/90 font-normal leading-[1.65]">
                 Our work blends legal expertise with strategic thinking. We serve as your partner in structure, compliance, and growth, ensuring your business or creative pursuit not only survives, but thrives.
               </p>
             </div>
 
-            <!-- Carousel Controls -->
-            <div class="flex items-center gap-3">
-              <span class="hidden sm:inline text-xs font-bold uppercase tracking-widest text-[#F4B400]">&lt; DRAG / SCROLL &gt;</span>
-              <button type="button" class="grid size-10 place-items-center rounded-full border border-white/20 bg-white/5 text-white transition-all duration-200 hover:border-[#F4B400] hover:text-[#F4B400] hover:bg-white/10" id="services-prev" aria-label="Previous service">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            <!-- Carousel Navigation Controls -->
+            <div class="flex items-center gap-3 shrink-0">
+              <button type="button" class="grid size-11 place-items-center rounded-full border border-white/20 bg-white/10 text-white transition-all duration-200 hover:border-[#F4B400] hover:bg-[#F4B400] hover:text-[#141A21] hover:scale-105 active:scale-95 cursor-pointer shadow-sm" id="services-prev" aria-label="Previous service">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 19l-7-7 7-7"/></svg>
               </button>
-              <button type="button" class="grid size-10 place-items-center rounded-full border border-white/20 bg-white/5 text-white transition-all duration-200 hover:border-[#F4B400] hover:text-[#F4B400] hover:bg-white/10" id="services-next" aria-label="Next service">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+              <button type="button" class="grid size-11 place-items-center rounded-full border border-white/20 bg-white/10 text-white transition-all duration-200 hover:border-[#F4B400] hover:bg-[#F4B400] hover:text-[#141A21] hover:scale-105 active:scale-95 cursor-pointer shadow-sm" id="services-next" aria-label="Next service">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
               </button>
             </div>
           </div>
 
-          <!-- Services Carousel Track -->
-          <div class="mt-8 flex gap-6 overflow-x-auto pb-4 hide-scrollbar scroll-smooth" id="services-track">
+          <!-- Services Carousel Track (Robert Reference Design System: Crisp Editorial Cards) -->
+          <div class="mt-8 flex gap-6 overflow-x-auto pb-6 pt-2 hide-scrollbar scroll-smooth" id="services-track">
             
-            <!-- Card 1 -->
-            <div class="service-card w-[300px] sm:w-[350px] shrink-0 rounded-2xl border border-white/10 bg-[#0F1A24] p-6 flex flex-col justify-between">
+            <!-- Card 1: Corporate & Commercial Law (Crisp White Card) -->
+            <div class="service-card w-[310px] sm:w-[360px] shrink-0 rounded-2xl sm:rounded-3xl border border-line bg-white p-7 text-ink shadow-xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
               <div>
-                <span class="inline-block rounded-md border border-[#F4B400]/30 bg-[#F4B400]/10 px-2.5 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-[#F4B400]">Corporate</span>
-                <h3 class="mt-4 text-xl font-bold text-white">Corporate &amp; Commercial Law</h3>
-                <p class="mt-3 text-xs leading-[1.65] text-white">
+                <span class="inline-flex items-center gap-1.5 rounded-full border border-line-strong/20 bg-paper px-3 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-ink shadow-2xs">
+                  <span class="size-1.5 rounded-full bg-[#F4B400]"></span>
+                  <span>Corporate</span>
+                </span>
+                <h3 class="mt-4 text-[1.25rem] font-extrabold leading-[1.25] text-ink tracking-tight">Corporate &amp; Commercial Law</h3>
+                <p class="mt-3 text-xs leading-[1.7] text-body">
                   We help organizations operate with clarity and confidence, from company structuring to contract negotiation, joint ventures, and corporate governance. Our commercial practice ensures every deal is designed to protect your interests and unlock opportunity.
                 </p>
-                <div class="mt-5 border-t border-white/10 pt-4">
-                  <span class="block text-[0.7rem] font-bold uppercase tracking-wider text-white">What we offer:</span>
-                  <ul class="mt-2.5 space-y-1.5 text-xs text-white">
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Business Structuring &amp; Incorporation</li>
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Transaction Advisory</li>
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Contract Drafting &amp; Negotiation</li>
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Corporate Governance</li>
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Regulatory Compliance</li>
+                <div class="mt-5 border-t border-line/80 pt-4">
+                  <span class="block text-[0.7rem] font-bold uppercase tracking-wider text-muted mb-2.5">What we offer:</span>
+                  <ul class="space-y-2 text-xs font-semibold text-ink">
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Business Structuring &amp; Incorporation</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Transaction Advisory</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Contract Drafting &amp; Negotiation</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Corporate Governance</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Regulatory Compliance</li>
                   </ul>
                 </div>
               </div>
-              <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
-                <button type="button" class="text-xs font-bold uppercase tracking-wider text-[#F4B400] hover:underline cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
-                <span class="grid size-8 place-items-center rounded-full bg-[#F4B400] text-[#141A21] font-bold">↗</span>
+              <div class="mt-6 pt-4 border-t border-line/80 flex items-center justify-between">
+                <button type="button" class="text-xs font-bold uppercase tracking-wider text-ink hover:text-[#8C6527] transition-colors cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
+                <button type="button" class="grid size-9 place-items-center rounded-full bg-paper hover:bg-[#F4B400] text-ink transition-all hover:scale-110 active:scale-95 shadow-xs cursor-pointer" data-open-modal="speak-lawyer-modal" aria-label="Book Consultation">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </button>
               </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="service-card w-[300px] sm:w-[350px] shrink-0 rounded-2xl border border-white/10 bg-[#0F1A24] p-6 flex flex-col justify-between">
+            <!-- Card 2: Startups & Entrepreneurship Support (Featured Anchor Dark Slate Card) -->
+            <div class="service-card w-[310px] sm:w-[360px] shrink-0 rounded-2xl sm:rounded-3xl border border-white/20 bg-[#0B1520] p-7 text-white shadow-2xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl relative">
               <div>
-                <span class="inline-block rounded-md border border-[#F4B400]/30 bg-[#F4B400]/10 px-2.5 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-[#F4B400]">Startups</span>
-                <h3 class="mt-4 text-xl font-bold text-white">Startups &amp; Entrepreneurship Support</h3>
-                <p class="mt-3 text-xs leading-[1.65] text-white">
+                <span class="inline-flex items-center gap-1.5 rounded-full border border-[#F4B400]/40 bg-[#F4B400]/15 px-3 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-[#F4B400] shadow-2xs">
+                  <span class="size-1.5 rounded-full bg-[#F4B400] shadow-[0_0_8px_#F4B400]"></span>
+                  <span>Startups &amp; Scaleups</span>
+                </span>
+                <h3 class="mt-4 text-[1.25rem] font-extrabold leading-[1.25] text-white tracking-tight">Startups &amp; Entrepreneurship Support</h3>
+                <p class="mt-3 text-xs leading-[1.7] text-white font-normal">
                   Starting right matters. We provide early-stage founders and growing businesses with the legal and strategic support to turn good ideas into enduring enterprises.
                 </p>
-                <div class="mt-5 border-t border-white/10 pt-4">
-                  <span class="block text-[0.7rem] font-bold uppercase tracking-wider text-white">What we offer:</span>
-                  <ul class="mt-2.5 space-y-1.5 text-xs text-white">
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Founders’ Agreements &amp; Share Structuring</li>
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Investment Readiness &amp; Due Diligence</li>
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Compliance Frameworks for Growth</li>
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Advisory for Accelerators &amp; Programs</li>
+                <div class="mt-5 border-t border-white/15 pt-4">
+                  <span class="block text-[0.7rem] font-bold uppercase tracking-wider text-[#F4B400] mb-2.5">What we offer:</span>
+                  <ul class="space-y-2 text-xs font-medium text-white">
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Founders’ Agreements &amp; Share Structuring</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Investment Readiness &amp; Due Diligence</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Compliance Frameworks for Growth</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Advisory for Accelerators &amp; Programs</li>
                   </ul>
                 </div>
               </div>
-              <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
-                <button type="button" class="text-xs font-bold uppercase tracking-wider text-[#F4B400] hover:underline cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
-                <span class="grid size-8 place-items-center rounded-full bg-[#F4B400] text-[#141A21] font-bold">↗</span>
+              <div class="mt-6 pt-4 border-t border-white/15">
+                <button type="button" class="btn btn-gold w-full justify-between text-xs py-2.5 font-bold shadow-md active:scale-[0.98]" data-open-modal="speak-lawyer-modal">
+                  <span>Book Consultation</span>
+                  <svg class="arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </button>
               </div>
             </div>
 
-            <!-- Card 3 -->
-            <div class="service-card w-[300px] sm:w-[350px] shrink-0 rounded-2xl border border-white/10 bg-[#0F1A24] p-6 flex flex-col justify-between">
+            <!-- Card 3: Creative Industries & IP Strategy (Crisp White Card) -->
+            <div class="service-card w-[310px] sm:w-[360px] shrink-0 rounded-2xl sm:rounded-3xl border border-line bg-white p-7 text-ink shadow-xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
               <div>
-                <span class="inline-block rounded-md border border-[#F4B400]/30 bg-[#F4B400]/10 px-2.5 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-[#F4B400]">Creative &amp; IP</span>
-                <h3 class="mt-4 text-xl font-bold text-white">Creative Industries &amp; IP Strategy</h3>
-                <p class="mt-3 text-xs leading-[1.65] text-white">
+                <span class="inline-flex items-center gap-1.5 rounded-full border border-line-strong/20 bg-paper px-3 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-ink shadow-2xs">
+                  <span class="size-1.5 rounded-full bg-[#F4B400]"></span>
+                  <span>Creative &amp; IP</span>
+                </span>
+                <h3 class="mt-4 text-[1.25rem] font-extrabold leading-[1.25] text-ink tracking-tight">Creative Industries &amp; IP Strategy</h3>
+                <p class="mt-3 text-xs leading-[1.7] text-body">
                   Ideas deserve protection, and the people who birth them, structure. We work with creatives, artists, and entertainment brands to protect intellectual property, manage rights, and build systems that sustain their art and enterprise.
                 </p>
-                <p class="mt-2 text-xs italic text-[#F4B400]">
+                <p class="mt-2 text-xs italic font-serif text-[#8C6527] border-l-2 border-[#F4B400] pl-2.5">
                   “We help creatives build systems that let their art scale — without losing its soul.”
                 </p>
-                <div class="mt-4 border-t border-white/10 pt-4">
-                  <span class="block text-[0.7rem] font-bold uppercase tracking-wider text-white">What we offer:</span>
-                  <ul class="mt-2 space-y-1.5 text-xs text-white">
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Copyrights, Trademarks &amp; Licensing</li>
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Content Distribution &amp; Monetization Agreements</li>
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Artist &amp; Talent Representation</li>
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>IP Portfolio Strategy &amp; Creative Structures</li>
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Record Label Set-Up &amp; Operations</li>
+                <div class="mt-4 border-t border-line/80 pt-4">
+                  <span class="block text-[0.7rem] font-bold uppercase tracking-wider text-muted mb-2.5">What we offer:</span>
+                  <ul class="space-y-2 text-xs font-semibold text-ink">
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Copyrights, Trademarks &amp; Licensing</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Content Distribution &amp; Monetization Agreements</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Artist &amp; Talent Representation</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>IP Portfolio Strategy &amp; Creative Structures</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Record Label Set-Up &amp; Operations</li>
                   </ul>
                 </div>
               </div>
-              <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
-                <button type="button" class="text-xs font-bold uppercase tracking-wider text-[#F4B400] hover:underline cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
-                <span class="grid size-8 place-items-center rounded-full bg-[#F4B400] text-[#141A21] font-bold">↗</span>
+              <div class="mt-6 pt-4 border-t border-line/80 flex items-center justify-between">
+                <button type="button" class="text-xs font-bold uppercase tracking-wider text-ink hover:text-[#8C6527] transition-colors cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
+                <button type="button" class="grid size-9 place-items-center rounded-full bg-paper hover:bg-[#F4B400] text-ink transition-all hover:scale-110 active:scale-95 shadow-xs cursor-pointer" data-open-modal="speak-lawyer-modal" aria-label="Book Consultation">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </button>
               </div>
             </div>
 
-            <!-- Card 4 -->
-            <div class="service-card w-[300px] sm:w-[350px] shrink-0 rounded-2xl border border-white/10 bg-[#0F1A24] p-6 flex flex-col justify-between">
+            <!-- Card 4: Dispute Resolution & Risk Management (Crisp White Card) -->
+            <div class="service-card w-[310px] sm:w-[360px] shrink-0 rounded-2xl sm:rounded-3xl border border-line bg-white p-7 text-ink shadow-xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
               <div>
-                <span class="inline-block rounded-md border border-[#F4B400]/30 bg-[#F4B400]/10 px-2.5 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-[#F4B400]">Resolution</span>
-                <h3 class="mt-4 text-xl font-bold text-white">Dispute Resolution &amp; Risk Management</h3>
-                <p class="mt-3 text-xs leading-[1.65] text-white">
+                <span class="inline-flex items-center gap-1.5 rounded-full border border-line-strong/20 bg-paper px-3 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-ink shadow-2xs">
+                  <span class="size-1.5 rounded-full bg-[#F4B400]"></span>
+                  <span>Dispute Resolution</span>
+                </span>
+                <h3 class="mt-4 text-[1.25rem] font-extrabold leading-[1.25] text-ink tracking-tight">Dispute Resolution &amp; Risk Management</h3>
+                <p class="mt-3 text-xs leading-[1.7] text-body">
                   When conflict arises, we aim for clarity, not chaos. Our approach is strategic and peace-driven, resolving issues through negotiation, mediation, or litigation where necessary, while keeping your long-term goals in focus.
                 </p>
-                <div class="mt-5 border-t border-white/10 pt-4">
-                  <span class="block text-[0.7rem] font-bold uppercase tracking-wider text-white">What we offer:</span>
-                  <ul class="mt-2.5 space-y-1.5 text-xs text-white">
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Commercial Dispute Resolution</li>
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Mediation &amp; Arbitration</li>
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Employment &amp; Contractual Disputes</li>
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Risk Audits &amp; Compliance Reviews</li>
+                <div class="mt-5 border-t border-line/80 pt-4">
+                  <span class="block text-[0.7rem] font-bold uppercase tracking-wider text-muted mb-2.5">What we offer:</span>
+                  <ul class="space-y-2 text-xs font-semibold text-ink">
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Commercial Dispute Resolution</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Mediation &amp; Arbitration</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Employment &amp; Contractual Disputes</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Risk Audits &amp; Compliance Reviews</li>
                   </ul>
                 </div>
               </div>
-              <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
-                <button type="button" class="text-xs font-bold uppercase tracking-wider text-[#F4B400] hover:underline cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
-                <span class="grid size-8 place-items-center rounded-full bg-[#F4B400] text-[#141A21] font-bold">↗</span>
+              <div class="mt-6 pt-4 border-t border-line/80 flex items-center justify-between">
+                <button type="button" class="text-xs font-bold uppercase tracking-wider text-ink hover:text-[#8C6527] transition-colors cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
+                <button type="button" class="grid size-9 place-items-center rounded-full bg-paper hover:bg-[#F4B400] text-ink transition-all hover:scale-110 active:scale-95 shadow-xs cursor-pointer" data-open-modal="speak-lawyer-modal" aria-label="Book Consultation">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </button>
               </div>
             </div>
 
-            <!-- Card 5 -->
-            <div class="service-card w-[300px] sm:w-[350px] shrink-0 rounded-2xl border border-white/10 bg-[#0F1A24] p-6 flex flex-col justify-between">
+            <!-- Card 5: Training, Advisory & Capacity Building (Crisp White Card) -->
+            <div class="service-card w-[310px] sm:w-[360px] shrink-0 rounded-2xl sm:rounded-3xl border border-line bg-white p-7 text-ink shadow-xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
               <div>
-                <span class="inline-block rounded-md border border-[#F4B400]/30 bg-[#F4B400]/10 px-2.5 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-[#F4B400]">Advisory</span>
-                <h3 class="mt-4 text-xl font-bold text-white">Training, Advisory &amp; Capacity Building</h3>
-                <p class="mt-3 text-xs leading-[1.65] text-white">
+                <span class="inline-flex items-center gap-1.5 rounded-full border border-line-strong/20 bg-paper px-3 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-ink shadow-2xs">
+                  <span class="size-1.5 rounded-full bg-[#F4B400]"></span>
+                  <span>Training &amp; Advisory</span>
+                </span>
+                <h3 class="mt-4 text-[1.25rem] font-extrabold leading-[1.25] text-ink tracking-tight">Training, Advisory &amp; Capacity Building</h3>
+                <p class="mt-3 text-xs leading-[1.7] text-body">
                   We believe knowledge is structure. Through tailored workshops, advisory programs, and training initiatives, we help teams and entrepreneurs build the systems, culture, and compliance they need to grow sustainably.
                 </p>
-                <div class="mt-5 border-t border-white/10 pt-4">
-                  <span class="block text-[0.7rem] font-bold uppercase tracking-wider text-white">What we offer:</span>
-                  <ul class="mt-2.5 space-y-1.5 text-xs text-white">
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Legal Training for Entrepreneurs &amp; SMEs</li>
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Compliance &amp; Ethics Workshops</li>
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Strategic Advisory for Business Programs</li>
-                    <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-[#F4B400]"></span>Capacity Building for Creative &amp; Impact Projects</li>
+                <div class="mt-5 border-t border-line/80 pt-4">
+                  <span class="block text-[0.7rem] font-bold uppercase tracking-wider text-muted mb-2.5">What we offer:</span>
+                  <ul class="space-y-2 text-xs font-semibold text-ink">
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Legal Training for Entrepreneurs &amp; SMEs</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Compliance &amp; Ethics Workshops</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Strategic Advisory for Business Programs</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Capacity Building for Creative &amp; Impact Projects</li>
                   </ul>
                 </div>
               </div>
-              <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
-                <button type="button" class="text-xs font-bold uppercase tracking-wider text-[#F4B400] hover:underline cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
-                <span class="grid size-8 place-items-center rounded-full bg-[#F4B400] text-[#141A21] font-bold">↗</span>
+              <div class="mt-6 pt-4 border-t border-line/80 flex items-center justify-between">
+                <button type="button" class="text-xs font-bold uppercase tracking-wider text-ink hover:text-[#8C6527] transition-colors cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
+                <button type="button" class="grid size-9 place-items-center rounded-full bg-paper hover:bg-[#F4B400] text-ink transition-all hover:scale-110 active:scale-95 shadow-xs cursor-pointer" data-open-modal="speak-lawyer-modal" aria-label="Book Consultation">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </button>
               </div>
             </div>
 
@@ -493,8 +517,8 @@
           <div class="mt-8 border-t border-white/10 pt-6 flex flex-wrap items-center justify-between gap-4">
             <span class="text-xs text-white">Need a bespoke legal structure for your enterprise?</span>
             <div class="flex items-center gap-3">
-              <button type="button" class="btn btn-gold text-xs px-5 py-2 min-h-10" data-open-modal="speak-lawyer-modal">Book a Session ↗</button>
-              <a class="btn btn-gold-outline text-xs px-5 py-2 min-h-10" href="#contact">Talk to Us</a>
+              <button type="button" class="btn btn-gold text-xs px-5 py-2.5 min-h-10" data-open-modal="speak-lawyer-modal">Book a Session ↗</button>
+              <a class="btn btn-gold-outline text-xs px-5 py-2.5 min-h-10" href="#contact">Talk to Us</a>
             </div>
           </div>
 

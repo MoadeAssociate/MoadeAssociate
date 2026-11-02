@@ -148,10 +148,10 @@
 
   if (servicesTrack && servicesPrev && servicesNext) {
     servicesPrev.addEventListener('click', function () {
-      servicesTrack.scrollBy({ left: -360, behavior: 'smooth' });
+      servicesTrack.scrollBy({ left: -384, behavior: 'smooth' });
     });
     servicesNext.addEventListener('click', function () {
-      servicesTrack.scrollBy({ left: 360, behavior: 'smooth' });
+      servicesTrack.scrollBy({ left: 384, behavior: 'smooth' });
     });
   }
 
