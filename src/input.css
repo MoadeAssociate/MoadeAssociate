@@ -22,10 +22,10 @@
   --color-cyan-hover: #45D4D9;
   --color-cyan-deep: #076A72;
 
-  --color-gold: #C9A350;
-  --color-gold-hover: #D8B15D;
+  --color-gold: #F4B400;
+  --color-gold-hover: #E0A300;
   --color-gold-deep: #8C6527;
-  --color-gold-light: #FBF6EB;
+  --color-gold-light: #FFF9E6;
 
   --color-slate-card: #142431;
   --color-slate-dark: #0F1A24;
@@ -139,7 +139,7 @@
   }
 
   .btn-gold {
-    @apply border-gold bg-gold text-[#0F1A24] shadow-[0_4px_16px_rgba(201,163,80,0.28)] hover:bg-gold-hover hover:shadow-[0_6px_22px_rgba(201,163,80,0.42)] hover:-translate-y-0.5;
+    @apply border-gold bg-gold text-[#141A21] font-bold shadow-[0_4px_16px_rgba(244,180,0,0.32)] hover:bg-gold-hover hover:shadow-[0_6px_22px_rgba(244,180,0,0.48)] hover:-translate-y-0.5;
   }
 
   .btn-gold .arrow {

@@ -238,7 +238,11 @@
       roleEl.textContent = item.role;
       logoEl.src = item.logo;
       logoEl.alt = item.author;
-      if (countEl) countEl.textContent = (currentIndex + 1) + ' / ' + testimonials.length;
+      if (countEl) {
+        var curStr = (currentIndex + 1 < 10 ? '0' : '') + (currentIndex + 1);
+        var totalStr = (testimonials.length < 10 ? '0' : '') + testimonials.length;
+        countEl.textContent = curStr + ' / ' + totalStr;
+      }
 
       if (cardEl) {
         cardEl.style.opacity = '1';
