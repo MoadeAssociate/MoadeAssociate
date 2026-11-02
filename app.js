@@ -434,4 +434,22 @@
     });
   }
 
+  /* 10. Smart Mobile Bar Auto-Hide on Scroll -------------------------------- */
+  var mBar = document.querySelector('.mobile-bar');
+  if (mBar) {
+    var lastY = window.scrollY;
+    var threshold = 90;
+    window.addEventListener('scroll', function () {
+      var currY = window.scrollY;
+      if (currY > lastY && currY > threshold) {
+        // Scrolling down -> hide bar smoothly so text is completely visible
+        mBar.classList.add('bar-hidden');
+      } else {
+        // Scrolling up -> reveal quick action bar
+        mBar.classList.remove('bar-hidden');
+      }
+      lastY = currY;
+    }, { passive: true });
+  }
+
 })();

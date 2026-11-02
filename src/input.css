@@ -10,12 +10,12 @@
   --color-paper: #F5F2EC;
   --color-paper-deep: #EBE5DB;
   --color-peach: #EFDAC7;
-  --color-ink: #1B2128;
-  --color-ink-soft: #2B3346;
-  --color-body: #50555C;
-  --color-muted: #7A8485;
+  --color-ink: #141A21;
+  --color-ink-soft: #242D38;
+  --color-body: #4A515A;
+  --color-muted: #6E7781;
   --color-line: rgba(87, 87, 87, 0.14);
-  --color-line-strong: rgba(32, 34, 38, 0.22);
+  --color-line-strong: rgba(20, 26, 33, 0.22);
   --color-line-light: rgba(255, 255, 255, 0.12);
 
   --color-cyan: #5DE1E6;
@@ -24,6 +24,7 @@
 
   --color-gold: #C9A350;
   --color-gold-hover: #D8B15D;
+  --color-gold-deep: #8C6527;
   --color-gold-light: #FBF6EB;
 
   --color-slate-card: #142431;
@@ -82,7 +83,7 @@
     outline-color: var(--color-gold);
   }
 
-  /* Impeccable Typography Wraps */
+  /* Impeccable Typography Balance */
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
   }
@@ -125,11 +126,11 @@
 
   /* Badges & Kickers */
   .pill-badge {
-    @apply inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-1 text-[0.7rem] font-bold uppercase tracking-[0.16em] text-white/90 backdrop-blur-md shadow-xs transition-all duration-200 hover:border-white/30 hover:bg-white/15;
+    @apply inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-1 text-[0.7rem] font-bold uppercase tracking-[0.16em] text-white/95 backdrop-blur-md shadow-xs transition-all duration-200 hover:border-white/30 hover:bg-white/15;
   }
 
   .pill-badge-dark {
-    @apply inline-flex items-center gap-2 rounded-full border border-ink/15 bg-white/70 px-3.5 py-1 text-[0.7rem] font-bold uppercase tracking-[0.16em] text-ink shadow-xs transition-all duration-200 hover:border-ink/25 hover:bg-white;
+    @apply inline-flex items-center gap-2 rounded-full border border-ink/15 bg-white/80 px-3.5 py-1 text-[0.7rem] font-bold uppercase tracking-[0.16em] text-ink shadow-xs transition-all duration-200 hover:border-ink/25 hover:bg-white;
   }
 
   /* Buttons */
@@ -166,7 +167,7 @@
   }
 
   .text-link {
-    @apply inline-flex items-center gap-1.5 border-0 border-b border-line-strong bg-transparent p-0 text-left font-sans text-[0.88rem] font-semibold leading-[1.5] text-ink transition-all duration-200 hover:border-gold hover:text-gold;
+    @apply inline-flex items-center gap-1.5 border-0 border-b border-line-strong bg-transparent p-0 text-left font-sans text-[0.88rem] font-semibold leading-[1.5] text-ink transition-all duration-200 hover:border-gold-deep hover:text-gold-deep;
   }
 
   .skip-link {
@@ -231,7 +232,7 @@
     @apply scale-100;
   }
 
-  /* Fields */
+  /* Form Fields */
   .field {
     @apply flex min-w-0 flex-col gap-1.5;
   }
@@ -256,7 +257,7 @@
 
   .field select {
     @apply appearance-none pr-8;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5l5-5' fill='none' stroke='%23202226' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5l5-5' fill='none' stroke='%23141A21' stroke-width='1.5'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 14px center;
   }
@@ -284,17 +285,22 @@
     @apply hidden;
   }
 
+  /* Smart Mobile Floating Bar with Auto-Hide on Scroll */
   .mobile-bar {
     @apply hidden;
   }
 
   @media (max-width: 767px) {
     .mobile-bar {
-      @apply fixed inset-x-0 bottom-0 z-[90] flex items-center gap-3 border-t border-line-strong/20 bg-paper/95 px-4 pt-3 pb-[calc(12px+env(safe-area-inset-bottom,0px))] backdrop-blur-md shadow-[0_-4px_24px_rgba(0,0,0,0.08)];
+      @apply fixed inset-x-4 bottom-4 z-[90] flex items-center gap-2.5 rounded-full border border-line-strong/20 bg-paper/95 p-1.5 shadow-[0_8px_32px_rgba(0,0,0,0.18)] backdrop-blur-xl transition-all duration-300;
+    }
+
+    .mobile-bar.bar-hidden {
+      @apply translate-y-[150%] opacity-0 pointer-events-none;
     }
 
     body {
-      padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+      padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px));
     }
   }
 
