@@ -10,12 +10,12 @@
   --color-paper: #F5F2EC;
   --color-paper-deep: #EBE5DB;
   --color-peach: #EFDAC7;
-  --color-ink: #202226;
+  --color-ink: #1B2128;
   --color-ink-soft: #2B3346;
-  --color-body: #575757;
+  --color-body: #50555C;
   --color-muted: #7A8485;
   --color-line: rgba(87, 87, 87, 0.14);
-  --color-line-strong: rgba(32, 34, 38, 0.24);
+  --color-line-strong: rgba(32, 34, 38, 0.22);
   --color-line-light: rgba(255, 255, 255, 0.12);
 
   --color-cyan: #5DE1E6;
@@ -35,15 +35,17 @@
   --color-error: #982F21;
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-smooth: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 96px;
+    scroll-padding-top: 100px;
     background-color: var(--color-paper);
     color: var(--color-ink);
     scrollbar-color: #9d978b var(--color-paper);
+    text-rendering: optimizeLegibility;
   }
 
   body {
@@ -53,7 +55,7 @@
     color: var(--color-body);
     font-family: var(--font-sans);
     font-size: 16px;
-    line-height: 1.65;
+    line-height: 1.68;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -80,6 +82,15 @@
     outline-color: var(--color-gold);
   }
 
+  /* Impeccable Typography Wraps */
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+  p, li, blockquote {
+    text-wrap: pretty;
+  }
+
   @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;
@@ -101,7 +112,7 @@
   }
 
   .display {
-    @apply font-sans text-[clamp(2.15rem,4.4vw,3.75rem)] font-bold leading-[1.08] tracking-[-0.03em] text-ink text-balance;
+    @apply font-sans text-[clamp(2.15rem,4.4vw,3.75rem)] font-bold leading-[1.08] tracking-[-0.03em] text-ink;
   }
 
   .lede {
@@ -112,20 +123,22 @@
     @apply border-t border-line py-16 sm:py-20 lg:py-24;
   }
 
+  /* Badges & Kickers */
   .pill-badge {
-    @apply inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-1 text-[0.7rem] font-bold uppercase tracking-[0.16em] text-white/90 backdrop-blur-md;
+    @apply inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-1 text-[0.7rem] font-bold uppercase tracking-[0.16em] text-white/90 backdrop-blur-md shadow-xs transition-all duration-200 hover:border-white/30 hover:bg-white/15;
   }
 
   .pill-badge-dark {
-    @apply inline-flex items-center gap-2 rounded-full border border-ink/15 bg-white/70 px-3.5 py-1 text-[0.7rem] font-bold uppercase tracking-[0.16em] text-ink shadow-xs;
+    @apply inline-flex items-center gap-2 rounded-full border border-ink/15 bg-white/70 px-3.5 py-1 text-[0.7rem] font-bold uppercase tracking-[0.16em] text-ink shadow-xs transition-all duration-200 hover:border-ink/25 hover:bg-white;
   }
 
+  /* Buttons */
   .btn {
     @apply inline-flex min-h-[46px] items-center justify-center gap-2.5 rounded-full border px-6 text-center font-sans text-[0.84rem] font-bold leading-[1.2] tracking-[0.02em] transition-all duration-200 cursor-pointer active:scale-[0.98];
   }
 
   .btn-gold {
-    @apply border-gold bg-gold text-[#0F1A24] shadow-[0_4px_16px_rgba(201,163,80,0.28)] hover:bg-gold-hover hover:shadow-[0_6px_22px_rgba(201,163,80,0.38)];
+    @apply border-gold bg-gold text-[#0F1A24] shadow-[0_4px_16px_rgba(201,163,80,0.28)] hover:bg-gold-hover hover:shadow-[0_6px_22px_rgba(201,163,80,0.42)] hover:-translate-y-0.5;
   }
 
   .btn-gold .arrow {
@@ -137,19 +150,19 @@
   }
 
   .btn-gold-outline {
-    @apply border-white/25 bg-white/5 text-white backdrop-blur-sm hover:border-gold hover:bg-white/10 hover:text-gold;
+    @apply border-white/25 bg-white/5 text-white backdrop-blur-sm hover:border-gold hover:bg-white/10 hover:text-gold hover:-translate-y-0.5;
   }
 
   .btn-cyan {
-    @apply border-cyan bg-cyan text-ink shadow-[0_2px_8px_rgba(93,225,230,0.25)] hover:bg-cyan-hover hover:border-cyan-hover;
+    @apply border-cyan bg-cyan text-ink shadow-[0_2px_8px_rgba(93,225,230,0.25)] hover:bg-cyan-hover hover:border-cyan-hover hover:-translate-y-0.5;
   }
 
   .btn-solid {
-    @apply border-ink bg-ink text-paper hover:bg-ink-soft hover:border-ink-soft;
+    @apply border-ink bg-ink text-paper hover:bg-ink-soft hover:border-ink-soft hover:-translate-y-0.5;
   }
 
   .btn-outline {
-    @apply border-line-strong bg-transparent text-ink hover:border-ink hover:bg-ink hover:text-paper;
+    @apply border-line-strong bg-transparent text-ink hover:border-ink hover:bg-ink hover:text-paper hover:-translate-y-0.5;
   }
 
   .text-link {
@@ -160,12 +173,17 @@
     @apply fixed left-2.5 top-2.5 z-[1000] -translate-y-[150%] bg-ink px-[18px] py-3 text-[13px] text-paper transition-transform duration-200 focus:translate-y-0;
   }
 
+  /* Header */
   .site-header {
-    @apply sticky top-0 z-[100] border-b border-line bg-paper/95 backdrop-blur-md transition-all duration-300;
+    @apply sticky top-0 z-[100] border-b border-line/80 bg-paper/90 backdrop-blur-xl transition-all duration-300;
   }
 
   .site-header .header-inner {
     @apply min-h-[76px] transition-[min-height] duration-300;
+  }
+
+  .site-header.is-scrolled {
+    @apply border-line shadow-xs;
   }
 
   .site-header.is-scrolled .header-inner {
@@ -173,7 +191,7 @@
   }
 
   .menu-toggle {
-    @apply flex size-11 flex-col items-center justify-center gap-1.5 border border-line bg-transparent p-0 min-[1120px]:hidden cursor-pointer rounded-full;
+    @apply flex size-11 flex-col items-center justify-center gap-1.5 border border-line bg-white/60 p-0 min-[1120px]:hidden cursor-pointer rounded-full transition-colors hover:bg-white;
   }
 
   .menu-toggle span {
@@ -198,7 +216,7 @@
 
   /* Modal System */
   .modal-backdrop {
-    @apply invisible fixed inset-0 z-[400] flex items-center justify-center bg-black/60 p-4 opacity-0 backdrop-blur-sm transition-all duration-300;
+    @apply invisible fixed inset-0 z-[400] flex items-center justify-center bg-black/65 p-4 opacity-0 backdrop-blur-md transition-all duration-300;
   }
 
   .modal-backdrop.open {
@@ -206,7 +224,7 @@
   }
 
   .modal-panel {
-    @apply max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-3xl border border-line bg-paper p-6 sm:p-9 shadow-2xl transition-transform duration-300 scale-95;
+    @apply max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-[2rem] border border-line bg-paper p-6 sm:p-9 shadow-[0_24px_72px_rgba(0,0,0,0.2)] transition-transform duration-300 scale-95;
   }
 
   .modal-backdrop.open .modal-panel {
@@ -229,7 +247,7 @@
   .field input,
   .field select,
   .field textarea {
-    @apply min-h-12 w-full rounded-xl border border-line bg-white/70 px-4 py-2.5 text-[0.96rem] leading-[1.5] text-ink transition-colors duration-200 focus:bg-white focus:border-gold focus:outline-gold;
+    @apply min-h-12 w-full rounded-xl border border-line bg-white/70 px-4 py-2.5 text-[0.96rem] leading-[1.5] text-ink transition-all duration-200 focus:bg-white focus:border-gold focus:ring-2 focus:ring-gold/20 focus:outline-none;
   }
 
   .field textarea {
@@ -278,6 +296,11 @@
     body {
       padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
     }
+  }
+
+  /* Service Card Hover & Shadow */
+  .service-card {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-white/20;
   }
 
   /* Custom Scrollbar for Service Carousel */

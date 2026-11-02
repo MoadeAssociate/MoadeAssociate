@@ -40,11 +40,14 @@
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <!-- Top Announcement Bar -->
-  <div class="border-b border-line bg-paper-deep/80 px-4 py-2 text-center text-[0.74rem] font-semibold tracking-wide text-ink">
-    <span>Legal + Strategic Advisory for High-Impact Businesses &amp; Entrepreneurs in Africa</span>
-    <span class="mx-2 hidden sm:inline text-muted">·</span>
-    <span class="hidden sm:inline text-muted">Office Hours: Mon–Fri, 9 AM – 4 PM</span>
-  </div>
+  <aside class="border-b border-line/60 bg-paper-deep/70 px-4 py-2.5 text-center text-[0.76rem] font-semibold tracking-wide text-ink backdrop-blur-sm" aria-label="Firm announcement">
+    <div class="shell flex items-center justify-center gap-2 sm:gap-3 flex-wrap">
+      <span class="inline-flex size-1.5 rounded-full bg-[#C9A350]"></span>
+      <span>Legal + Strategic Advisory for High-Impact Businesses &amp; Entrepreneurs in Africa</span>
+      <span class="hidden md:inline text-muted">|</span>
+      <span class="hidden md:inline text-muted font-normal">Office Hours: Mon–Fri, 9 AM – 4 PM (WAT)</span>
+    </div>
+  </aside>
 
   <!-- Main Site Header -->
   <header class="site-header" id="site-header">
@@ -52,24 +55,24 @@
       <div class="header-inner flex items-center justify-between gap-6 py-2">
         
         <!-- Logo -->
-        <a class="flex items-center gap-3 py-1" href="#top" aria-label="MOADE Associates Home">
-          <img src="assets/images/moade_logo.png" alt="MOADE Associates" class="h-9 w-auto object-contain sm:h-11" width="173" height="44" priority>
+        <a class="flex items-center gap-3 py-1 group transition-transform duration-200 active:scale-95" href="#top" aria-label="MOADE Associates Home">
+          <img src="assets/images/moade_logo.png" alt="MOADE Associates" class="h-9 w-auto object-contain sm:h-11 transition-opacity group-hover:opacity-90" width="173" height="44" priority>
         </a>
 
         <!-- Desktop Navigation Pill (Reference Design System) -->
-        <nav class="hidden min-[1120px]:flex items-center gap-1 rounded-full border border-line-strong/20 bg-white/70 p-1.5 shadow-xs backdrop-blur-md" aria-label="Main Navigation">
-          <a class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-colors hover:text-gold hover:bg-black/5" href="#top">Home</a>
-          <a class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-colors hover:text-gold hover:bg-black/5" href="#about">About</a>
-          <a class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-colors hover:text-gold hover:bg-black/5" href="#services">Services</a>
-          <a class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-colors hover:text-gold hover:bg-black/5" href="#works">Works</a>
-          <a class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-colors hover:text-gold hover:bg-black/5" href="#testimonials">Testimonials</a>
-          <button type="button" class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-colors hover:text-gold hover:bg-black/5 cursor-pointer" data-open-modal="join-us-modal">Join Us</button>
-          <a class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-colors hover:text-gold hover:bg-black/5" href="#contact">Contact</a>
+        <nav class="hidden min-[1120px]:flex items-center gap-1 rounded-full border border-line-strong/15 bg-white/75 p-1.5 shadow-xs backdrop-blur-md" aria-label="Main Navigation">
+          <a class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-all duration-200 hover:text-[#C9A350] hover:bg-black/5" href="#top">Home</a>
+          <a class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-all duration-200 hover:text-[#C9A350] hover:bg-black/5" href="#about">About</a>
+          <a class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-all duration-200 hover:text-[#C9A350] hover:bg-black/5" href="#services">Services</a>
+          <a class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-all duration-200 hover:text-[#C9A350] hover:bg-black/5" href="#works">Works</a>
+          <a class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-all duration-200 hover:text-[#C9A350] hover:bg-black/5" href="#testimonials">Testimonials</a>
+          <button type="button" class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-all duration-200 hover:text-[#C9A350] hover:bg-black/5 cursor-pointer" data-open-modal="join-us-modal">Join Us</button>
+          <a class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-all duration-200 hover:text-[#C9A350] hover:bg-black/5" href="#contact">Contact</a>
         </nav>
 
         <!-- Right Action Button (Gold Pill CTA with Arrow) -->
         <div class="hidden sm:flex items-center gap-3">
-          <button type="button" class="btn btn-gold text-[0.82rem] shadow-sm" data-open-modal="speak-lawyer-modal">
+          <button type="button" class="btn btn-gold text-[0.82rem]" data-open-modal="speak-lawyer-modal">
             <span>Speak to a lawyer</span>
             <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
           </button>
@@ -93,20 +96,20 @@
       </button>
     </div>
     <nav class="mt-6 flex flex-col gap-4 text-lg font-bold text-ink">
-      <a class="py-1 hover:text-gold" href="#top">Home</a>
-      <a class="py-1 hover:text-gold" href="#about">About MOADE</a>
-      <a class="py-1 hover:text-gold" href="#services">Our Services</a>
-      <a class="py-1 hover:text-gold" href="#works">Legal Works</a>
-      <a class="py-1 hover:text-gold" href="#testimonials">Client Testimonials</a>
-      <button type="button" class="text-left py-1 hover:text-gold cursor-pointer" data-open-modal="join-us-modal">Join Us (Careers)</button>
-      <a class="py-1 hover:text-gold" href="#contact">Contact Us</a>
+      <a class="py-1 hover:text-[#C9A350] transition-colors" href="#top">Home</a>
+      <a class="py-1 hover:text-[#C9A350] transition-colors" href="#about">About MOADE</a>
+      <a class="py-1 hover:text-[#C9A350] transition-colors" href="#services">Our Services</a>
+      <a class="py-1 hover:text-[#C9A350] transition-colors" href="#works">Legal Works</a>
+      <a class="py-1 hover:text-[#C9A350] transition-colors" href="#testimonials">Client Testimonials</a>
+      <button type="button" class="text-left py-1 hover:text-[#C9A350] transition-colors cursor-pointer" data-open-modal="join-us-modal">Join Us (Careers)</button>
+      <a class="py-1 hover:text-[#C9A350] transition-colors" href="#contact">Contact Us</a>
     </nav>
     <div class="mt-auto border-t border-line pt-6">
       <button type="button" class="btn btn-gold w-full justify-center" data-open-modal="speak-lawyer-modal">
         <span>Speak to a lawyer</span>
         <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
       </button>
-      <p class="mt-4 text-center text-xs text-muted">Office Hours: Monday – Friday, 9 AM – 4 PM</p>
+      <p class="mt-4 text-center text-xs text-muted">Office Hours: Monday – Friday, 9 AM – 4 PM (WAT)</p>
     </div>
   </div>
 
@@ -114,9 +117,9 @@
     <!-- HERO SECTION (Robert Design System Reference) -->
     <section class="pt-6 sm:pt-10 lg:pt-12" id="top">
       <div class="shell">
-        <div class="relative overflow-hidden rounded-[2rem] sm:rounded-[2.5rem] border border-white/10 bg-[#142431] p-6 text-white shadow-2xl sm:p-10 lg:p-14">
+        <div class="relative overflow-hidden rounded-[2rem] sm:rounded-[2.5rem] border border-white/10 bg-[#142431] p-6 text-white shadow-[0_24px_64px_rgba(15,26,36,0.3)] sm:p-10 lg:p-14">
           
-          <!-- Background Ambient Glow -->
+          <!-- Background Ambient Glow & Architectural Motifs -->
           <div class="pointer-events-none absolute -right-24 -top-24 size-[550px] rounded-full bg-radial from-[#C9A350]/15 via-[#5DE1E6]/5 to-transparent blur-3xl"></div>
           <div class="pointer-events-none absolute -left-24 bottom-0 size-[450px] rounded-full bg-radial from-[#5DE1E6]/10 via-transparent to-transparent blur-2xl"></div>
 
@@ -126,11 +129,11 @@
             <!-- Left Hero Content -->
             <div class="lg:col-span-7">
               <div class="pill-badge mb-6 inline-flex">
-                <span class="size-2 rounded-full bg-[#C9A350]"></span>
+                <span class="size-2 rounded-full bg-[#C9A350] shadow-[0_0_8px_rgba(201,163,80,0.8)]"></span>
                 <span>⚖️ LEGAL + STRATEGIC ADVISORY</span>
               </div>
 
-              <h1 class="text-[clamp(2.35rem,4.8vw,4.1rem)] font-extrabold leading-[1.08] tracking-[-0.03em] text-white text-balance">
+              <h1 class="text-[clamp(2.35rem,4.8vw,4.1rem)] font-extrabold leading-[1.08] tracking-[-0.03em] text-white">
                 Reimagining Legal Support &amp; Strategy <br class="hidden sm:inline">
                 <span class="text-[#C9A350]">for Growth in Africa</span>
               </h1>
@@ -142,7 +145,7 @@
               <div class="mt-8 flex flex-wrap items-center gap-4">
                 <button type="button" class="btn btn-gold" data-open-modal="speak-lawyer-modal">
                   <span>Book a Consultation</span>
-                  <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                  <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </button>
                 <a class="btn btn-gold-outline" href="#services">
                   <span>Explore Our Services</span>
@@ -153,8 +156,8 @@
             <!-- Right Hero Partner Showcase (Using updated partner photo from doc) -->
             <div class="relative lg:col-span-5">
               <div class="relative mx-auto max-w-[420px] overflow-hidden rounded-2xl border border-white/15 bg-slate-dark shadow-2xl">
-                <img src="assets/images/partner-lead.jpg" alt="Lead Partner | MOADE Associates" class="h-auto w-full object-cover" width="1080" height="1350" fetchpriority="high">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#0A121A]/80 via-transparent to-transparent"></div>
+                <img src="assets/images/partner-lead.jpg" alt="Managing Partner | MOADE Associates" class="h-auto w-full object-cover" width="1080" height="1350" fetchpriority="high">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0A121A]/85 via-transparent to-transparent"></div>
                 
                 <div class="absolute bottom-4 left-4 right-4 text-white">
                   <span class="block text-[0.68rem] font-bold uppercase tracking-[0.16em] text-[#C9A350]">Managing Partner &amp; Lead Counsel</span>
@@ -163,7 +166,7 @@
               </div>
 
               <!-- Floating Social Proof Badge (Reference Design System) -->
-              <div class="absolute -bottom-6 -left-4 sm:left-4 z-20 max-w-[280px] rounded-2xl border border-white/20 bg-[#0F1A24]/90 p-4 shadow-xl backdrop-blur-md">
+              <div class="absolute -bottom-6 -left-4 sm:left-4 z-20 max-w-[280px] rounded-2xl border border-white/20 bg-[#0F1A24]/92 p-4 shadow-xl backdrop-blur-md transition-transform duration-300 hover:scale-[1.02]">
                 <div class="flex items-center gap-1.5 text-[#C9A350]">
                   <span class="text-sm font-bold">★ ★ ★ ★ ★</span>
                   <span class="text-xs font-bold text-white">4.9 / 5.0</span>
@@ -171,7 +174,7 @@
                 <p class="mt-1.5 text-[0.74rem] leading-[1.4] text-white/80">
                   “Strategic legal guidance for your personal and business needs.”
                 </p>
-                <button type="button" class="mt-2.5 inline-flex items-center gap-1 text-[0.72rem] font-bold uppercase tracking-wider text-[#C9A350] hover:underline" data-open-modal="speak-lawyer-modal">
+                <button type="button" class="mt-2.5 inline-flex items-center gap-1 text-[0.72rem] font-bold uppercase tracking-wider text-[#C9A350] hover:underline cursor-pointer" data-open-modal="speak-lawyer-modal">
                   <span>Start your case</span>
                   <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </button>
@@ -184,8 +187,8 @@
           <div class="relative z-10 mt-12 sm:mt-16 border-t border-white/15 pt-8">
             <div class="grid grid-cols-2 gap-6 lg:grid-cols-4 lg:gap-8">
               
-              <div class="flex items-center gap-3.5">
-                <div class="grid size-11 shrink-0 place-items-center rounded-xl border border-white/15 bg-white/5 text-[#C9A350]">
+              <div class="flex items-center gap-3.5 group">
+                <div class="grid size-11 shrink-0 place-items-center rounded-xl border border-white/15 bg-white/5 text-[#C9A350] transition-colors group-hover:border-[#C9A350]/40 group-hover:bg-[#C9A350]/10">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                 </div>
                 <div>
@@ -194,8 +197,8 @@
                 </div>
               </div>
 
-              <div class="flex items-center gap-3.5">
-                <div class="grid size-11 shrink-0 place-items-center rounded-xl border border-white/15 bg-white/5 text-[#C9A350]">
+              <div class="flex items-center gap-3.5 group">
+                <div class="grid size-11 shrink-0 place-items-center rounded-xl border border-white/15 bg-white/5 text-[#C9A350] transition-colors group-hover:border-[#C9A350]/40 group-hover:bg-[#C9A350]/10">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                 </div>
                 <div>
@@ -204,8 +207,8 @@
                 </div>
               </div>
 
-              <div class="flex items-center gap-3.5">
-                <div class="grid size-11 shrink-0 place-items-center rounded-xl border border-white/15 bg-white/5 text-[#C9A350]">
+              <div class="flex items-center gap-3.5 group">
+                <div class="grid size-11 shrink-0 place-items-center rounded-xl border border-white/15 bg-white/5 text-[#C9A350] transition-colors group-hover:border-[#C9A350]/40 group-hover:bg-[#C9A350]/10">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                 </div>
                 <div>
@@ -214,8 +217,8 @@
                 </div>
               </div>
 
-              <div class="flex items-center gap-3.5">
-                <div class="grid size-11 shrink-0 place-items-center rounded-xl border border-white/15 bg-white/5 text-[#C9A350]">
+              <div class="flex items-center gap-3.5 group">
+                <div class="grid size-11 shrink-0 place-items-center rounded-xl border border-white/15 bg-white/5 text-[#C9A350] transition-colors group-hover:border-[#C9A350]/40 group-hover:bg-[#C9A350]/10">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                 </div>
                 <div>
@@ -238,10 +241,10 @@
           <div class="pill-badge-dark mb-4 inline-flex">
             <span>CORE PHILOSOPHY</span>
           </div>
-          <h2 class="text-[clamp(1.75rem,3.2vw,2.65rem)] font-extrabold leading-[1.2] tracking-tight text-ink text-balance">
+          <h2 class="text-[clamp(1.75rem,3.2vw,2.65rem)] font-extrabold leading-[1.2] tracking-tight text-ink">
             “We build the backbone of vision. So your ideas can stand tall, scale wide, and create lasting impact.”
           </h2>
-          <p class="mt-6 text-[clamp(1rem,1.2vw,1.15rem)] leading-[1.7] text-body text-balance">
+          <p class="mt-6 text-[clamp(1rem,1.2vw,1.15rem)] leading-[1.7] text-body">
             We are a modern law firm redefining how legal support drives progress. Our work sits at the intersection of law, business, and impact, guiding forward-thinking individuals and organizations through every phase of growth, creation, and transformation.
           </p>
         </div>
@@ -263,20 +266,20 @@
               Built On Integrity, <br>
               <span class="text-[#C9A350]">Driven By Vision</span>
             </h2>
-            <p class="mt-6 text-lg font-medium leading-[1.6] text-ink">
+            <p class="mt-6 text-lg font-medium leading-[1.6] text-ink border-l-2 border-[#C9A350] pl-4">
               “We don’t just provide legal advice — we embed ourselves into your business strategy, helping you build systems, structure, scale and stay compliant as you grow.”
             </p>
             <div class="mt-8">
               <button type="button" class="btn btn-gold" data-open-modal="speak-lawyer-modal">
                 <span>Let’s Talk</span>
-                <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
               </button>
             </div>
           </div>
 
           <!-- Right Column (Our Story + Narrative) -->
           <div class="lg:col-span-7 space-y-8 text-body text-[1.02rem] leading-[1.75]">
-            <div class="border-l-2 border-[#C9A350] pl-6">
+            <div class="rounded-2xl border border-line bg-paper/60 p-6 sm:p-8">
               <h3 class="text-xl font-bold text-ink">Our Story: Law that Moves with Vision</h3>
               <p class="mt-3">
                 Moade Associates was born from a simple belief, that the law should not only protect ideas, but propel them. We exist for the bold; for entrepreneurs, creators, and leaders who are building tomorrow’s Africa today. Our role is to make sure your vision stands on solid ground, legally sound, strategically aligned, and ready for growth.
@@ -290,15 +293,15 @@
               </p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
-              <div class="rounded-2xl border border-line bg-paper p-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
+              <div class="rounded-2xl border border-line bg-paper p-6 transition-transform duration-200 hover:-translate-y-0.5">
                 <span class="block text-xs font-bold uppercase tracking-wider text-[#C9A350]">Our Philosophy</span>
                 <p class="mt-2 text-sm leading-[1.65] text-ink">
                   We believe that the best legal advice doesn’t just respond, it anticipates. It builds frameworks that outlast trends, and systems that empower rather than restrict. We don’t just draft documents; we design the structure for your success.
                 </p>
               </div>
 
-              <div class="rounded-2xl border border-line bg-paper p-6">
+              <div class="rounded-2xl border border-line bg-paper p-6 transition-transform duration-200 hover:-translate-y-0.5">
                 <span class="block text-xs font-bold uppercase tracking-wider text-[#C9A350]">Our Promise</span>
                 <p class="mt-2 text-sm leading-[1.65] text-ink">
                   To walk with you, from idea to execution, from risk to resolution, with excellence, empathy, and strategy.
@@ -334,10 +337,10 @@
             <!-- Carousel Controls -->
             <div class="flex items-center gap-3">
               <span class="hidden sm:inline text-xs font-bold uppercase tracking-widest text-[#C9A350]">&lt; DRAG / SCROLL &gt;</span>
-              <button type="button" class="grid size-10 place-items-center rounded-full border border-white/20 bg-white/5 text-white transition-colors hover:border-[#C9A350] hover:text-[#C9A350]" id="services-prev" aria-label="Previous service">
+              <button type="button" class="grid size-10 place-items-center rounded-full border border-white/20 bg-white/5 text-white transition-all duration-200 hover:border-[#C9A350] hover:text-[#C9A350] hover:bg-white/10" id="services-prev" aria-label="Previous service">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
               </button>
-              <button type="button" class="grid size-10 place-items-center rounded-full border border-white/20 bg-white/5 text-white transition-colors hover:border-[#C9A350] hover:text-[#C9A350]" id="services-next" aria-label="Next service">
+              <button type="button" class="grid size-10 place-items-center rounded-full border border-white/20 bg-white/5 text-white transition-all duration-200 hover:border-[#C9A350] hover:text-[#C9A350] hover:bg-white/10" id="services-next" aria-label="Next service">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
               </button>
             </div>
@@ -347,7 +350,7 @@
           <div class="mt-8 flex gap-6 overflow-x-auto pb-4 hide-scrollbar scroll-smooth" id="services-track">
             
             <!-- Card 1 -->
-            <div class="w-[300px] sm:w-[350px] shrink-0 rounded-2xl border border-white/10 bg-[#0F1A24] p-6 flex flex-col justify-between">
+            <div class="service-card w-[300px] sm:w-[350px] shrink-0 rounded-2xl border border-white/10 bg-[#0F1A24] p-6 flex flex-col justify-between">
               <div>
                 <span class="inline-block rounded-md border border-white/15 bg-white/5 px-2.5 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-[#C9A350]">Corporate</span>
                 <h3 class="mt-4 text-xl font-bold text-white">Corporate &amp; Commercial Law</h3>
@@ -366,13 +369,13 @@
                 </div>
               </div>
               <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
-                <button type="button" class="text-xs font-bold uppercase tracking-wider text-[#C9A350] hover:underline" data-open-modal="speak-lawyer-modal">Book Consultation</button>
+                <button type="button" class="text-xs font-bold uppercase tracking-wider text-[#C9A350] hover:underline cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
                 <span class="grid size-8 place-items-center rounded-full bg-white/10 text-white">↗</span>
               </div>
             </div>
 
             <!-- Card 2 -->
-            <div class="w-[300px] sm:w-[350px] shrink-0 rounded-2xl border border-white/10 bg-[#0F1A24] p-6 flex flex-col justify-between">
+            <div class="service-card w-[300px] sm:w-[350px] shrink-0 rounded-2xl border border-white/10 bg-[#0F1A24] p-6 flex flex-col justify-between">
               <div>
                 <span class="inline-block rounded-md border border-white/15 bg-white/5 px-2.5 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-[#C9A350]">Startups</span>
                 <h3 class="mt-4 text-xl font-bold text-white">Startups &amp; Entrepreneurship Support</h3>
@@ -390,13 +393,13 @@
                 </div>
               </div>
               <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
-                <button type="button" class="text-xs font-bold uppercase tracking-wider text-[#C9A350] hover:underline" data-open-modal="speak-lawyer-modal">Book Consultation</button>
+                <button type="button" class="text-xs font-bold uppercase tracking-wider text-[#C9A350] hover:underline cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
                 <span class="grid size-8 place-items-center rounded-full bg-white/10 text-white">↗</span>
               </div>
             </div>
 
             <!-- Card 3 -->
-            <div class="w-[300px] sm:w-[350px] shrink-0 rounded-2xl border border-white/10 bg-[#0F1A24] p-6 flex flex-col justify-between">
+            <div class="service-card w-[300px] sm:w-[350px] shrink-0 rounded-2xl border border-white/10 bg-[#0F1A24] p-6 flex flex-col justify-between">
               <div>
                 <span class="inline-block rounded-md border border-white/15 bg-white/5 px-2.5 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-[#C9A350]">Creative &amp; IP</span>
                 <h3 class="mt-4 text-xl font-bold text-white">Creative Industries &amp; IP Strategy</h3>
@@ -418,13 +421,13 @@
                 </div>
               </div>
               <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
-                <button type="button" class="text-xs font-bold uppercase tracking-wider text-[#C9A350] hover:underline" data-open-modal="speak-lawyer-modal">Book Consultation</button>
+                <button type="button" class="text-xs font-bold uppercase tracking-wider text-[#C9A350] hover:underline cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
                 <span class="grid size-8 place-items-center rounded-full bg-white/10 text-white">↗</span>
               </div>
             </div>
 
             <!-- Card 4 -->
-            <div class="w-[300px] sm:w-[350px] shrink-0 rounded-2xl border border-white/10 bg-[#0F1A24] p-6 flex flex-col justify-between">
+            <div class="service-card w-[300px] sm:w-[350px] shrink-0 rounded-2xl border border-white/10 bg-[#0F1A24] p-6 flex flex-col justify-between">
               <div>
                 <span class="inline-block rounded-md border border-white/15 bg-white/5 px-2.5 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-[#C9A350]">Resolution</span>
                 <h3 class="mt-4 text-xl font-bold text-white">Dispute Resolution &amp; Risk Management</h3>
@@ -442,13 +445,13 @@
                 </div>
               </div>
               <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
-                <button type="button" class="text-xs font-bold uppercase tracking-wider text-[#C9A350] hover:underline" data-open-modal="speak-lawyer-modal">Book Consultation</button>
+                <button type="button" class="text-xs font-bold uppercase tracking-wider text-[#C9A350] hover:underline cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
                 <span class="grid size-8 place-items-center rounded-full bg-white/10 text-white">↗</span>
               </div>
             </div>
 
             <!-- Card 5 -->
-            <div class="w-[300px] sm:w-[350px] shrink-0 rounded-2xl border border-white/10 bg-[#0F1A24] p-6 flex flex-col justify-between">
+            <div class="service-card w-[300px] sm:w-[350px] shrink-0 rounded-2xl border border-white/10 bg-[#0F1A24] p-6 flex flex-col justify-between">
               <div>
                 <span class="inline-block rounded-md border border-white/15 bg-white/5 px-2.5 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-[#C9A350]">Advisory</span>
                 <h3 class="mt-4 text-xl font-bold text-white">Training, Advisory &amp; Capacity Building</h3>
@@ -466,7 +469,7 @@
                 </div>
               </div>
               <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
-                <button type="button" class="text-xs font-bold uppercase tracking-wider text-[#C9A350] hover:underline" data-open-modal="speak-lawyer-modal">Book Consultation</button>
+                <button type="button" class="text-xs font-bold uppercase tracking-wider text-[#C9A350] hover:underline cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
                 <span class="grid size-8 place-items-center rounded-full bg-white/10 text-white">↗</span>
               </div>
             </div>
@@ -563,13 +566,13 @@
           </div>
           
           <div class="flex items-center gap-3">
-            <button type="button" class="btn btn-outline text-xs px-4 py-2 min-h-10" id="shuffle-testimonials" title="Shuffle testimonials">
+            <button type="button" class="btn btn-outline text-xs px-4 py-2 min-h-10 cursor-pointer" id="shuffle-testimonials" title="Shuffle testimonials">
               <span>Shuffle Testimonials 🔀</span>
             </button>
-            <button type="button" class="grid size-10 place-items-center rounded-full border border-line-strong bg-white text-ink transition-colors hover:bg-paper-deep" id="testimonial-prev" aria-label="Previous testimonial">
+            <button type="button" class="grid size-10 place-items-center rounded-full border border-line-strong bg-white text-ink transition-colors hover:bg-paper-deep cursor-pointer" id="testimonial-prev" aria-label="Previous testimonial">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
             </button>
-            <button type="button" class="grid size-10 place-items-center rounded-full border border-line-strong bg-white text-ink transition-colors hover:bg-paper-deep" id="testimonial-next" aria-label="Next testimonial">
+            <button type="button" class="grid size-10 place-items-center rounded-full border border-line-strong bg-white text-ink transition-colors hover:bg-paper-deep cursor-pointer" id="testimonial-next" aria-label="Next testimonial">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
             </button>
           </div>
@@ -652,7 +655,7 @@
               </div>
               <div class="flex items-baseline justify-between border-b border-line pb-3">
                 <dt class="font-bold uppercase tracking-wider text-xs text-muted">Office Hours:</dt>
-                <dd class="font-medium text-ink">Monday – Friday, 9 AM – 4 PM</dd>
+                <dd class="font-medium text-ink">Monday – Friday, 9 AM – 4 PM (WAT)</dd>
               </div>
             </dl>
 
@@ -749,20 +752,20 @@
         <div>
           <h4 class="text-xs font-bold uppercase tracking-widest text-[#C9A350]">Quick Links</h4>
           <ul class="mt-4 space-y-2 text-xs">
-            <li><a class="hover:text-white" href="#top">Home</a></li>
-            <li><a class="hover:text-white" href="#about">About Our Practice</a></li>
-            <li><a class="hover:text-white" href="#services">Our Legal Services</a></li>
-            <li><a class="hover:text-white" href="#works">Legal Works</a></li>
-            <li><a class="hover:text-white" href="#testimonials">Client Testimonials</a></li>
+            <li><a class="hover:text-white transition-colors" href="#top">Home</a></li>
+            <li><a class="hover:text-white transition-colors" href="#about">About Our Practice</a></li>
+            <li><a class="hover:text-white transition-colors" href="#services">Our Legal Services</a></li>
+            <li><a class="hover:text-white transition-colors" href="#works">Legal Works</a></li>
+            <li><a class="hover:text-white transition-colors" href="#testimonials">Client Testimonials</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="text-xs font-bold uppercase tracking-widest text-[#C9A350]">Get In Touch</h4>
           <ul class="mt-4 space-y-2 text-xs">
-            <li>Email: <a class="hover:text-white" href="mailto:admin@moadeassociates.com">admin@moadeassociates.com</a></li>
-            <li>Phone: <a class="hover:text-white" href="tel:+2348165528752">+234 (816 552 8752)</a></li>
-            <li>WhatsApp: <a class="hover:text-white" href="https://wa.me/2348153380312">0815 338 0312</a></li>
+            <li>Email: <a class="hover:text-white transition-colors" href="mailto:admin@moadeassociates.com">admin@moadeassociates.com</a></li>
+            <li>Phone: <a class="hover:text-white transition-colors" href="tel:+2348165528752">+234 (816 552 8752)</a></li>
+            <li>WhatsApp: <a class="hover:text-white transition-colors" href="https://wa.me/2348153380312">0815 338 0312</a></li>
             <li>Hours: Mon – Fri, 9 AM – 4 PM</li>
           </ul>
         </div>
@@ -780,9 +783,9 @@
       <div class="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
         <p>© MOADE Associates 2025. All rights reserved.</p>
         <div class="flex gap-6">
-          <button type="button" class="hover:text-white cursor-pointer" data-open-modal="privacy-modal">Privacy Policy</button>
-          <button type="button" class="hover:text-white cursor-pointer" data-open-modal="terms-modal">Terms &amp; Conditions</button>
-          <button type="button" class="hover:text-white cursor-pointer" data-open-modal="speak-lawyer-modal">Speak to a Lawyer</button>
+          <button type="button" class="hover:text-white transition-colors cursor-pointer" data-open-modal="privacy-modal">Privacy Policy</button>
+          <button type="button" class="hover:text-white transition-colors cursor-pointer" data-open-modal="terms-modal">Terms &amp; Conditions</button>
+          <button type="button" class="hover:text-white transition-colors cursor-pointer" data-open-modal="speak-lawyer-modal">Speak to a Lawyer</button>
         </div>
       </div>
     </div>
@@ -808,7 +811,7 @@
           <span class="text-xs font-bold uppercase tracking-wider text-[#C9A350]">Careers at MOADE Associates</span>
           <h3 class="text-2xl font-bold text-ink" id="join-modal-title">Application for Employment Form</h3>
         </div>
-        <button type="button" class="grid size-9 place-items-center rounded-full border border-line text-ink hover:bg-paper-deep" data-close-modal aria-label="Close modal">✕</button>
+        <button type="button" class="grid size-9 place-items-center rounded-full border border-line text-ink hover:bg-paper-deep transition-colors cursor-pointer" data-close-modal aria-label="Close modal">✕</button>
       </div>
 
       <p class="mt-3 text-xs leading-[1.6] text-body">
@@ -857,7 +860,7 @@
           <h4 class="text-xs font-bold uppercase tracking-widest text-ink mb-2">Application Uploads</h4>
           <div class="field">
             <label for="emp-resume">Resume / CV (PDF, DOC, DOCX) *</label>
-            <input type="file" id="emp-resume" name="resume" accept=".pdf,.doc,.docx" required class="cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-[#C9A350] file:text-[#0F1A24] hover:file:bg-[#D8B15D]">
+            <input type="file" id="emp-resume" name="resume" accept=".pdf,.doc,.docx" required class="cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-bold file:bg-[#C9A350] file:text-[#0F1A24] hover:file:bg-[#D8B15D]">
           </div>
         </div>
 
@@ -885,7 +888,7 @@
           <span class="text-xs font-bold uppercase tracking-wider text-[#C9A350]">Direct Consultation Gateway</span>
           <h3 class="text-2xl font-bold text-ink" id="speak-modal-title">Speak to a Lawyer</h3>
         </div>
-        <button type="button" class="grid size-9 place-items-center rounded-full border border-line text-ink hover:bg-paper-deep" data-close-modal aria-label="Close modal">✕</button>
+        <button type="button" class="grid size-9 place-items-center rounded-full border border-line text-ink hover:bg-paper-deep transition-colors cursor-pointer" data-close-modal aria-label="Close modal">✕</button>
       </div>
 
       <p class="mt-3 text-xs leading-[1.6] text-body">
@@ -955,7 +958,7 @@
           <h3 class="text-2xl font-bold text-ink" id="privacy-title">Privacy Policy</h3>
           <p class="text-xs text-muted">Last Updated: October 2025</p>
         </div>
-        <button type="button" class="grid size-9 place-items-center rounded-full border border-line text-ink hover:bg-paper-deep" data-close-modal aria-label="Close modal">✕</button>
+        <button type="button" class="grid size-9 place-items-center rounded-full border border-line text-ink hover:bg-paper-deep transition-colors cursor-pointer" data-close-modal aria-label="Close modal">✕</button>
       </div>
 
       <div class="mt-6 space-y-6 text-xs sm:text-sm leading-[1.75] text-body">
@@ -1030,7 +1033,7 @@
           <h3 class="text-2xl font-bold text-ink" id="terms-title">Terms &amp; Conditions</h3>
           <p class="text-xs text-muted">Last Updated: October 2025</p>
         </div>
-        <button type="button" class="grid size-9 place-items-center rounded-full border border-line text-ink hover:bg-paper-deep" data-close-modal aria-label="Close modal">✕</button>
+        <button type="button" class="grid size-9 place-items-center rounded-full border border-line text-ink hover:bg-paper-deep transition-colors cursor-pointer" data-close-modal aria-label="Close modal">✕</button>
       </div>
 
       <div class="mt-6 space-y-6 text-xs sm:text-sm leading-[1.75] text-body">
