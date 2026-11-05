@@ -3,6 +3,23 @@
 (function () {
   'use strict';
 
+  /* 0. SEO Host Synchronizer (Supports GitHub Pages & Custom Domain) -------- */
+  try {
+    var host = window.location.hostname;
+    if (host === 'moadeassociates.com' || host === 'www.moadeassociates.com') {
+      var can = document.getElementById('canonical-link');
+      if (can) can.setAttribute('href', 'https://moadeassociates.com/');
+      var ogUrl = document.getElementById('og-url');
+      if (ogUrl) ogUrl.setAttribute('content', 'https://moadeassociates.com/');
+      var ogImg = document.getElementById('og-image');
+      if (ogImg) ogImg.setAttribute('content', 'https://moadeassociates.com/assets/images/partner-lead.jpg');
+      var ogSec = document.getElementById('og-image-secure');
+      if (ogSec) ogSec.setAttribute('content', 'https://moadeassociates.com/assets/images/partner-lead.jpg');
+      var twImg = document.getElementById('tw-image');
+      if (twImg) twImg.setAttribute('content', 'https://moadeassociates.com/assets/images/partner-lead.jpg');
+    }
+  } catch (e) {}
+
   /* 1. Header scroll effect ------------------------------------------------ */
   var header = document.getElementById('site-header');
   function updateHeader() {
