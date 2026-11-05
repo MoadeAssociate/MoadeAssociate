@@ -3,7 +3,7 @@
 > **Reimagining Legal Support & Strategy for Growth in Africa**  
 > A bespoke, modern web presence for **MOADE Associates**, a leading virtual commercial legal practice and consulting firm based in Lekki, Lagos, Nigeria.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/xamorite/moade-associates)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/MoadeAssociate/MoadeAssociate)
 
 ---
 
@@ -49,7 +49,7 @@ MOADE Associates helps businesses, creatives, and entrepreneurs build the legal 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/xamorite/moade-associates.git
+   git clone https://github.com/MoadeAssociate/MoadeAssociate.git
    cd moade-associates
    ```
 

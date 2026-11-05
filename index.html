@@ -6,12 +6,14 @@
   <title>MOADE Associates | Legal + Strategic Advisory for High-Impact Businesses &amp; Entrepreneurs in Africa</title>
   <meta name="description" content="MOADE Associates — Reimagining legal support and strategy for growth in Africa. Corporate Law, Startups, IP Strategy, Dispute Resolution, and Advisory in Lekki, Lagos.">
   <link rel="canonical" href="https://moadeassociates.com/">
+  <link rel="icon" type="image/png" href="assets/images/moade_logo.png">
   
   <meta property="og:type" content="website">
   <meta property="og:title" content="MOADE Associates | A Leading Law Firm in Nigeria">
   <meta property="og:description" content="Legal + Strategic Advisory for High-Impact Businesses & Entrepreneurs in Africa.">
   <meta property="og:url" content="https://moadeassociates.com/">
-  <meta property="og:image" content="assets/images/partner-lead.jpg">
+  <meta property="og:image" content="https://moadeassociates.com/assets/images/partner-lead.jpg">
+  <meta property="og:image:alt" content="Managing Partner of MOADE Associates">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,228 +41,159 @@
 <body class="bg-paper text-body antialiased">
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <!-- Top Announcement Bar -->
-  <aside class="border-b border-line/60 bg-paper-deep/70 px-4 py-2.5 text-center text-[0.76rem] font-semibold tracking-wide text-ink backdrop-blur-sm" aria-label="Firm announcement">
-    <div class="shell flex items-center justify-center gap-2 sm:gap-3 flex-wrap">
-      <span class="inline-flex size-1.5 rounded-full bg-[#F4B400]"></span>
-      <span>Legal + Strategic Advisory for High-Impact Businesses &amp; Entrepreneurs in Africa</span>
-      <span class="hidden md:inline text-muted">|</span>
-      <span class="hidden md:inline text-muted font-normal">Office Hours: Mon–Fri, 9 AM – 4 PM (WAT)</span>
-    </div>
-  </aside>
-
-  <!-- Main Site Header -->
+  <!-- SINGLE MASTER SITE NAVBAR (Fixed at Top, Transparent over Hero, Deep-Teal Scrolled) -->
   <header class="site-header" id="site-header">
     <div class="shell">
       <div class="header-inner flex items-center justify-between gap-6 py-2">
-        
-        <!-- Logo -->
-        <a class="flex items-center gap-3 py-1 group transition-transform duration-200 active:scale-95" href="#top" aria-label="MOADE Associates Home">
-          <img src="assets/images/moade_logo.png" alt="MOADE Associates" class="h-9 w-auto object-contain sm:h-11 transition-opacity group-hover:opacity-90" width="173" height="44" priority>
-        </a>
+        <!-- Left: Logo + Navigation Links + Search Icon -->
+        <div class="flex items-center gap-6 lg:gap-10">
+          <a class="flex items-center gap-2 group transition-transform duration-200 active:scale-95" href="#top" aria-label="MOADE Associates Home">
+            <img src="assets/images/moade_logo.png" alt="MOADE Associates" class="h-8 w-auto object-contain sm:h-9 brightness-0 invert opacity-95 group-hover:opacity-100" width="173" height="44">
+          </a>
 
-        <!-- Desktop Navigation Pill (Reference Design System) -->
-        <nav class="hidden min-[1120px]:flex items-center gap-1 rounded-full border border-line-strong/15 bg-white/75 p-1.5 shadow-xs backdrop-blur-md" aria-label="Main Navigation">
-          <a class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-all duration-200 hover:text-[#F4B400] hover:bg-black/5" href="#top">Home</a>
-          <a class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-all duration-200 hover:text-[#F4B400] hover:bg-black/5" href="#about">About</a>
-          <a class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-all duration-200 hover:text-[#F4B400] hover:bg-black/5" href="#services">Services</a>
-          <a class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-all duration-200 hover:text-[#F4B400] hover:bg-black/5" href="#works">Works</a>
-          <a class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-all duration-200 hover:text-[#F4B400] hover:bg-black/5" href="#testimonials">Testimonials</a>
-          <button type="button" class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-all duration-200 hover:text-[#F4B400] hover:bg-black/5 cursor-pointer" data-open-modal="join-us-modal">Join Us</button>
-          <a class="rounded-full px-4 py-1.5 text-[0.82rem] font-semibold text-ink transition-all duration-200 hover:text-[#F4B400] hover:bg-black/5" href="#contact">Contact</a>
-        </nav>
+          <!-- Desktop Navigation Links -->
+          <nav class="hidden min-[900px]:flex items-center gap-6 lg:gap-8 text-[0.84rem] font-medium tracking-wide text-white/90" aria-label="Main Navigation">
+            <a class="transition-colors hover:text-[#50CDE2]" href="#top">Home</a>
+            <a class="transition-colors hover:text-[#50CDE2]" href="#about">About us</a>
+            <a class="transition-colors hover:text-[#50CDE2]" href="#services">Services</a>
+            <a class="transition-colors hover:text-[#50CDE2]" href="#works">Works</a>
+            <a class="transition-colors hover:text-[#50CDE2]" href="#testimonials">Testimonials</a>
+            <button type="button" class="transition-colors hover:text-[#50CDE2] cursor-pointer" data-open-modal="join-us-modal">Join us</button>
+            <a class="transition-colors hover:text-[#50CDE2]" href="#contact">Contact</a>
+          </nav>
 
-        <!-- Right Action Button (Gold Pill CTA with Arrow) -->
-        <div class="hidden sm:flex items-center gap-3">
-          <button type="button" class="btn btn-gold text-[0.82rem]" data-open-modal="speak-lawyer-modal">
-            <span>Speak to a lawyer</span>
-            <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          <!-- Search Icon (Q button from reference) -->
+          <button type="button" class="grid size-8 place-items-center rounded-full text-white/80 hover:text-[#50CDE2] hover:bg-white/10 transition-colors cursor-pointer" data-open-modal="search-modal" aria-label="Search practice areas">
+            <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
           </button>
         </div>
 
-        <!-- Mobile Menu Toggle -->
-        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
-          <span></span>
-          <span></span>
-        </button>
+        <!-- Right: Social Media Icons (Instagram, X) + Mobile Hamburger -->
+        <div class="flex items-center gap-3">
+          <!-- Instagram -->
+          <a href="https://instagram.com/moadeassociates" target="_blank" rel="noopener" class="grid size-8 place-items-center rounded-full text-white/80 hover:text-[#50CDE2] hover:bg-white/10 transition-colors" aria-label="Instagram">
+            <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <!-- X (Twitter) -->
+          <a href="https://x.com/moadeassociates" target="_blank" rel="noopener" class="grid size-8 place-items-center rounded-full text-white/80 hover:text-[#50CDE2] hover:bg-white/10 transition-colors" aria-label="X (formerly Twitter)">
+            <svg class="size-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button class="menu-toggle border-white/20 bg-white/10 text-white min-[900px]:hidden hover:bg-white/20" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+            <span class="bg-white"></span>
+            <span class="bg-white"></span>
+          </button>
+        </div>
       </div>
     </div>
   </header>
 
   <!-- Mobile Off-Canvas Menu -->
-  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-    <div class="flex items-center justify-between border-b border-line pb-4 pt-1">
-      <img src="assets/images/moade_logo.png" alt="MOADE Associates" class="h-8 w-auto">
-      <button class="menu-toggle" id="menu-close" aria-label="Close menu">
+  <div class="mobile-menu bg-[#0C2E3A] text-white" id="mobile-menu" aria-hidden="true">
+    <div class="flex items-center justify-between border-b border-white/15 pb-4 pt-1">
+      <img src="assets/images/moade_logo.png" alt="MOADE Associates" class="h-8 w-auto brightness-0 invert">
+      <button class="menu-toggle border-white/20 bg-white/10 text-white hover:bg-white/20" id="menu-close" aria-label="Close menu">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
       </button>
     </div>
-    <nav class="mt-6 flex flex-col gap-4 text-lg font-bold text-ink">
-      <a class="py-1 hover:text-[#F4B400] transition-colors" href="#top">Home</a>
-      <a class="py-1 hover:text-[#F4B400] transition-colors" href="#about">About MOADE</a>
-      <a class="py-1 hover:text-[#F4B400] transition-colors" href="#services">Our Services</a>
-      <a class="py-1 hover:text-[#F4B400] transition-colors" href="#works">Legal Works</a>
-      <a class="py-1 hover:text-[#F4B400] transition-colors" href="#testimonials">Client Testimonials</a>
-      <button type="button" class="text-left py-1 hover:text-[#F4B400] transition-colors cursor-pointer" data-open-modal="join-us-modal">Join Us (Careers)</button>
-      <a class="py-1 hover:text-[#F4B400] transition-colors" href="#contact">Contact Us</a>
+    <nav class="mt-6 flex flex-col gap-4 text-lg font-bold text-white">
+      <a class="py-1 hover:text-[#50CDE2] transition-colors" href="#top">Home</a>
+      <a class="py-1 hover:text-[#50CDE2] transition-colors" href="#about">About MOADE</a>
+      <a class="py-1 hover:text-[#50CDE2] transition-colors" href="#services">Our Services</a>
+      <a class="py-1 hover:text-[#50CDE2] transition-colors" href="#works">Legal Works</a>
+      <a class="py-1 hover:text-[#50CDE2] transition-colors" href="#testimonials">Client Testimonials</a>
+      <button type="button" class="text-left py-1 hover:text-[#50CDE2] transition-colors cursor-pointer" data-open-modal="join-us-modal">Join Us (Careers)</button>
+      <a class="py-1 hover:text-[#50CDE2] transition-colors" href="#contact">Contact Us</a>
     </nav>
-    <div class="mt-auto border-t border-line pt-6">
-      <button type="button" class="btn btn-gold w-full justify-center" data-open-modal="speak-lawyer-modal">
+    <div class="mt-auto border-t border-white/15 pt-6 space-y-3">
+      <button type="button" class="btn btn-brand w-full justify-center" data-open-modal="speak-lawyer-modal">
         <span>Speak to a lawyer</span>
         <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
       </button>
-      <p class="mt-4 text-center text-xs text-muted">Office Hours: Monday – Friday, 9 AM – 4 PM (WAT)</p>
+      <p class="text-center text-xs text-white/70">Office Hours: Monday – Friday, 9 AM – 4 PM (WAT)</p>
     </div>
   </div>
 
   <main id="main">
-    <!-- HERO SECTION (Robert Design System Reference) -->
-    <section class="pt-6 sm:pt-10 lg:pt-12" id="top">
-      <div class="shell">
-        <div class="relative overflow-hidden rounded-[2rem] sm:rounded-[2.5rem] border border-white/10 bg-[#142431] p-6 text-white shadow-[0_24px_64px_rgba(15,26,36,0.3)] sm:p-10 lg:p-14">
-          
-          <!-- Background Ambient Glow & Architectural Motifs -->
-          <div class="pointer-events-none absolute -right-24 -top-24 size-[550px] rounded-full bg-radial from-[#F4B400]/15 via-[#5DE1E6]/5 to-transparent blur-3xl"></div>
-          <div class="pointer-events-none absolute -left-24 bottom-0 size-[450px] rounded-full bg-radial from-[#5DE1E6]/10 via-transparent to-transparent blur-2xl"></div>
+    <!-- HERO SECTION (Full-Bleed, Zero-Margin Editorial Layout Matching Reference 100%) -->
+    <section class="relative min-h-[92vh] sm:min-h-screen flex flex-col justify-between bg-[#0C2E3A] text-white overflow-hidden pt-24 sm:pt-28 pb-8 sm:pb-12" id="top">
+      
+      <!-- Full-bleed Background: Counsel in Navy Suit Reviewing Documents -->
+      <img src="assets/images/hero-counsel.jpg" alt="MOADE counsel in a sharp navy suit reviewing legal documents with pen in hand" width="1400" height="2292" fetchpriority="high" decoding="async" class="absolute inset-0 h-full w-full object-cover object-[center_32%] pointer-events-none select-none">
+      
+      <!-- Atmospheric Gradients: Dark Teal Base & High-Contrast Vignette for Absolute Legibility -->
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0C2E3A] via-[#0C2E3A]/50 to-[#0C2E3A]/40"></div>
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#0C2E3A]/92 via-[#0C2E3A]/45 to-[#0C2E3A]/25"></div>
 
-          <!-- Hero Grid -->
-          <div class="relative z-10 grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14">
-            
-            <!-- Left Hero Content -->
-            <div class="lg:col-span-7">
-              <div class="pill-badge mb-6 inline-flex border-white/20 bg-white/10 text-white backdrop-blur-md">
-                <span class="size-2 rounded-full bg-[#F4B400] shadow-[0_0_10px_#F4B400]"></span>
-                <svg class="size-3.5 text-[#F4B400]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h18"/></svg>
-                <span class="text-xs font-bold uppercase tracking-[0.16em] text-white">LEGAL + STRATEGIC ADVISORY</span>
-              </div>
-
-              <h1 class="text-[clamp(2.35rem,4.8vw,4.1rem)] font-extrabold leading-[1.08] tracking-[-0.03em] text-white">
-                Reimagining Legal Support &amp; Strategy <br class="hidden sm:inline">
-                <span class="text-[#F4B400]">for Growth in Africa</span>
-              </h1>
-
-              <p class="mt-3 text-xs sm:text-sm font-semibold uppercase tracking-[0.14em] text-[#5DE1E6]">
-                Legal + Strategic Advisory for High-Impact Businesses &amp; Entrepreneurs in Africa
-              </p>
-
-              <p class="mt-5 max-w-[54ch] text-[clamp(1.02rem,1.25vw,1.15rem)] leading-[1.7] text-white font-normal">
-                At Moade Associates, we help businesses, creatives, and entrepreneurs build the systems and structures they need to grow — legally, strategically, and sustainably. We bring clarity where there’s complexity, structure where there’s vision, and strategy where there’s passion.
-              </p>
-
-              <div class="mt-8 flex flex-wrap items-center gap-4">
-                <button type="button" class="btn btn-gold" data-open-modal="speak-lawyer-modal">
-                  <span>Book a Consultation</span>
-                  <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-                </button>
-                <a class="btn btn-gold-outline" href="#services">
-                  <span>Explore Our Services</span>
-                </a>
-              </div>
+      <!-- Hero Main Content (Centered Shell Container) -->
+      <div class="shell relative z-10 flex flex-1 flex-col justify-between">
+        
+        <!-- Middle / Bottom Row: Supporting Description (Left) + Outlined Pill CTA (Right) -->
+        <div class="mt-auto grid grid-cols-1 items-end gap-6 sm:grid-cols-12 pt-20 sm:pt-28">
+          <div class="sm:col-span-8 lg:col-span-9 space-y-3.5">
+            <!-- Architectural Editorial Hallmark (Zero AI Pill / Zero Pulse Cliche) -->
+            <div class="flex items-center gap-2.5">
+              <span class="h-px w-6 bg-[#50CDE2]/70" aria-hidden="true"></span>
+              <span class="text-[0.68rem] font-bold uppercase tracking-[0.22em] text-[#50CDE2]">Legal + Strategic Advisory in Africa</span>
             </div>
 
-            <!-- Right Hero Partner Showcase -->
-            <div class="relative lg:col-span-5">
-              <div class="relative mx-auto max-w-[380px] sm:max-w-[420px] overflow-hidden rounded-2xl sm:rounded-3xl border border-white/15 bg-[#0F1A24] shadow-2xl aspect-[4/4.8] sm:aspect-auto">
-                <img src="assets/images/partner-lead.jpg" alt="Managing Partner | MOADE Associates" class="h-full w-full object-cover object-top" width="1080" height="1350" fetchpriority="high">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#0A121A]/90 via-transparent to-transparent pointer-events-none"></div>
-                
-                <div class="absolute bottom-4 left-4 right-4 text-white">
-                  <span class="block text-[0.68rem] font-bold uppercase tracking-[0.16em] text-[#F4B400]">Managing Partner &amp; Lead Counsel</span>
-                  <span class="text-lg font-bold tracking-tight text-white">MOADE Associates</span>
-                </div>
-              </div>
-
-              <!-- Floating Social Proof Badge (Robert Reference Design System) -->
-              <div class="mt-4 sm:mt-0 sm:absolute sm:-bottom-6 sm:-left-4 z-20 mx-auto max-w-[290px] rounded-2xl border border-white/20 bg-[#0F1A24]/95 p-4 shadow-2xl backdrop-blur-md transition-transform duration-300 hover:scale-[1.02]">
-                <div class="flex items-center gap-1.5 text-[#F4B400]">
-                  <svg class="size-3.5 fill-[#F4B400] text-[#F4B400]" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg class="size-3.5 fill-[#F4B400] text-[#F4B400]" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg class="size-3.5 fill-[#F4B400] text-[#F4B400]" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg class="size-3.5 fill-[#F4B400] text-[#F4B400]" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg class="size-3.5 fill-[#F4B400] text-[#F4B400]" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <span class="ml-1 text-xs font-bold text-white">4.9 / 5.0</span>
-                </div>
-                <p class="mt-2 text-[0.76rem] leading-[1.45] text-white font-medium">
-                  “Strategic legal guidance for your personal and business needs.”
-                </p>
-                <button type="button" class="btn btn-gold mt-3 w-full justify-center text-xs py-2 shadow-sm" data-open-modal="speak-lawyer-modal">
-                  <span>Start your case</span>
-                  <svg class="arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-                </button>
-              </div>
-            </div>
-
+            <p class="max-w-[56ch] text-[clamp(0.95rem,1.2vw,1.12rem)] font-normal leading-[1.7] text-white/90">
+              At Moade Associates, we help businesses, creatives, and entrepreneurs build the systems and structures they need to grow — legally, strategically, and sustainably. We bring clarity where there’s complexity, structure where there’s vision, and strategy where there’s passion.
+            </p>
           </div>
 
-          <!-- Bottom Metric Statistics Bar (Robert Reference Design System) -->
-          <div class="relative z-10 mt-12 sm:mt-16 border-t border-white/15 pt-8">
-            <div class="grid grid-cols-2 gap-5 sm:gap-6 lg:grid-cols-4 lg:gap-8">
-              
-              <!-- Stat 1: 30+ Years of Experience with Award Ribbon Icon -->
-              <div class="flex items-center gap-3.5 group">
-                <div class="grid size-11 shrink-0 place-items-center rounded-xl border border-white/15 bg-white/5 text-[#F4B400] transition-colors group-hover:border-[#F4B400]/40 group-hover:bg-[#F4B400]/10">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-                </div>
-                <div>
-                  <span class="block text-2xl sm:text-3xl font-extrabold text-white tracking-tight tabular-nums"><span data-counter="30">30</span>+</span>
-                  <span class="text-[0.72rem] font-bold uppercase tracking-wider text-white">Years of Experience</span>
-                </div>
-              </div>
-
-              <!-- Stat 2: 95% Success Rate -->
-              <div class="flex items-center gap-3.5 group">
-                <div class="grid size-11 shrink-0 place-items-center rounded-xl border border-white/15 bg-white/5 text-[#F4B400] transition-colors group-hover:border-[#F4B400]/40 group-hover:bg-[#F4B400]/10">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                </div>
-                <div>
-                  <span class="block text-2xl sm:text-3xl font-extrabold text-white tracking-tight tabular-nums"><span data-counter="95">95</span>%</span>
-                  <span class="text-[0.72rem] font-bold uppercase tracking-wider text-white">Success Rate</span>
-                </div>
-              </div>
-
-              <!-- Stat 3: 50+ Retained Clients -->
-              <div class="flex items-center gap-3.5 group">
-                <div class="grid size-11 shrink-0 place-items-center rounded-xl border border-white/15 bg-white/5 text-[#F4B400] transition-colors group-hover:border-[#F4B400]/40 group-hover:bg-[#F4B400]/10">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                </div>
-                <div>
-                  <span class="block text-2xl sm:text-3xl font-extrabold text-white tracking-tight tabular-nums"><span data-counter="50">50</span>+</span>
-                  <span class="text-[0.72rem] font-bold uppercase tracking-wider text-white">Retained Clients</span>
-                </div>
-              </div>
-
-              <!-- Stat 4: ₦1.2B+ Assets & Value Protected -->
-              <div class="flex items-center gap-3.5 group">
-                <div class="grid size-11 shrink-0 place-items-center rounded-xl border border-white/15 bg-white/5 text-[#F4B400] transition-colors group-hover:border-[#F4B400]/40 group-hover:bg-[#F4B400]/10">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                </div>
-                <div>
-                  <span class="block text-2xl sm:text-3xl font-extrabold text-white tracking-tight tabular-nums">₦1.2B+</span>
-                  <span class="text-[0.72rem] font-bold uppercase tracking-wider text-white">Assets &amp; Value Protected</span>
-                </div>
-              </div>
-
-            </div>
+          <!-- Outlined Pill CTA Button (Matching Reference Image "call to action") -->
+          <div class="sm:col-span-4 lg:col-span-3 sm:flex sm:justify-end">
+            <button type="button" class="btn-pill" data-open-modal="speak-lawyer-modal">
+              <span>Speak to a lawyer</span>
+              <svg class="arrow size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </button>
           </div>
-
         </div>
-      </div>
-    </section>
 
-    <!-- CORE MESSAGE / TAGLINE STATEMENT -->
-    <section class="py-14 sm:py-20 bg-paper">
-      <div class="shell">
-        <div class="mx-auto max-w-[960px] text-center">
-          <div class="pill-badge-dark mb-4 inline-flex">
-            <span>CORE PHILOSOPHY</span>
-          </div>
-          <h2 class="text-[clamp(1.75rem,3.2vw,2.65rem)] font-extrabold leading-[1.2] tracking-tight text-ink">
-            “We build the backbone of vision. So your ideas can stand tall, scale wide, and create lasting impact.”
-          </h2>
-          <p class="mt-6 text-[clamp(1rem,1.2vw,1.15rem)] leading-[1.7] text-body">
-            We are a modern law firm redefining how legal support drives progress. Our work sits at the intersection of law, business, and impact, guiding forward-thinking individuals and organizations through every phase of growth, creation, and transformation.
-          </p>
+        <!-- Giant Serif Signature (Matching "Allen Matkins" in Reference) -->
+        <div class="mt-8 border-t border-white/10 pt-4 sm:pt-6">
+          <h1 class="font-serif text-[clamp(3.1rem,9.2vw,8.8rem)] font-normal leading-[0.96] tracking-[-0.02em] text-white drop-shadow-sm">
+            MOADE <span class="whitespace-nowrap">Associates</span>
+          </h1>
         </div>
+
+        <!-- Refined Metadata Strip (Understated, Small, Footer-Style, Left-Aligned) -->
+        <div class="mt-6 border-t border-white/10 pt-4">
+          <div class="flex flex-wrap items-center gap-x-6 sm:gap-x-8 gap-y-2.5 text-[0.72rem] sm:text-[0.76rem] text-white/75">
+            <!-- Item 1: Practice Areas -->
+            <div class="flex items-center gap-2">
+              <svg class="size-3.5 shrink-0 text-[#50CDE2]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"/><path d="M7 12h10"/><path d="M10 18h4"/></svg>
+              <span><strong class="font-bold text-white"><span data-counter="5">5</span></strong> Core Practice Areas</span>
+            </div>
+
+            <span class="hidden sm:inline text-white/20" aria-hidden="true">·</span>
+
+            <!-- Item 2: Brands Advised -->
+            <div class="flex items-center gap-2">
+              <svg class="size-3.5 shrink-0 text-[#50CDE2]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <span><strong class="font-bold text-white"><span data-counter="15">15</span>+</strong> Brands &amp; Founders Advised</span>
+            </div>
+
+            <span class="hidden sm:inline text-white/20" aria-hidden="true">·</span>
+
+            <!-- Item 3: Pan-Africa Counsel -->
+            <div class="flex items-center gap-2">
+              <svg class="size-3.5 shrink-0 text-[#50CDE2]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span><strong class="font-bold text-white">Pan-Africa</strong> Strategic Counsel</span>
+            </div>
+
+            <span class="hidden sm:inline text-white/20" aria-hidden="true">·</span>
+
+            <!-- Item 4: Operating Hours -->
+            <div class="flex items-center gap-2">
+              <svg class="size-3.5 shrink-0 text-[#50CDE2]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span><strong class="font-bold text-white">9 AM – 4 PM</strong> <span class="text-white/60">WAT (Mon–Fri)</span></span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -270,53 +203,70 @@
         
         <div class="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16 items-start">
           
-          <!-- Left Column -->
-          <div class="lg:col-span-5">
-            <div class="pill-badge-dark mb-4 inline-flex">
-              <span>ABOUT US</span>
-            </div>
+          <!-- Left Column (Identity, Executive Portrait & Vision) -->
+          <div class="lg:col-span-5 flex flex-col items-start">
+            <p class="section-label mb-3">ABOUT US</p>
             <h2 class="display">
               Built On Integrity, <br>
-              <span class="text-[#8C6527]">Driven By Vision</span>
+              <span class="text-[#0C2E3A]">Driven By Vision</span>
             </h2>
-            <p class="mt-6 text-lg font-medium leading-[1.6] text-ink border-l-2 border-[#8C6527] pl-4">
+
+            <!-- Executive Portrait (Managing Partner seated in office, 4:5 ratio) -->
+            <div class="my-6 sm:my-7 w-full max-w-md group relative overflow-hidden rounded-2xl border border-line-strong/15 bg-paper-deep/40 shadow-[0_12px_36px_rgba(12,46,58,0.1)] transition-all duration-300 hover:shadow-[0_18px_48px_rgba(12,46,58,0.16)]">
+              <picture>
+                <source srcset="assets/images/partner-lead.webp" type="image/webp">
+                <img 
+                  src="assets/images/partner-lead.jpg" 
+                  alt="Managing Partner of MOADE Associates seated in modern legal office" 
+                  width="1080" 
+                  height="1350" 
+                  loading="lazy" 
+                  decoding="async" 
+                  class="aspect-[4/5] w-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-[1.02]"
+                >
+              </picture>
+            </div>
+
+            <!-- Narrative Pull Quote -->
+            <p class="text-[1.02rem] sm:text-[1.08rem] font-medium leading-[1.65] text-ink border-l-2 border-[#50CDE2] pl-4">
               “We don’t just provide legal advice — we embed ourselves into your business strategy, helping you build systems, structure, scale and stay compliant as you grow.”
             </p>
-            <div class="mt-8">
-              <button type="button" class="btn btn-gold" data-open-modal="speak-lawyer-modal">
+
+            <div class="mt-7">
+              <button type="button" class="btn btn-brand" data-open-modal="speak-lawyer-modal">
                 <span>Let’s Talk</span>
                 <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
               </button>
             </div>
           </div>
 
-          <!-- Right Column (Our Story + Narrative) -->
-          <div class="lg:col-span-7 space-y-8 text-body text-[1.02rem] leading-[1.75]">
-            <div class="rounded-2xl border border-line bg-paper/60 p-6 sm:p-8">
+          <!-- Right Column (Our Story + Narrative & Pillars) -->
+          <div class="lg:col-span-7 space-y-7 sm:space-y-8 text-body text-[1.02rem] leading-[1.75]">
+            <div class="rounded-2xl border border-line bg-paper/70 p-6 sm:p-8 backdrop-blur-xs shadow-xs">
               <h3 class="text-xl font-bold text-ink">Our Story: Law that Moves with Vision</h3>
-              <p class="mt-3">
+              <p class="mt-3 text-body/95 leading-[1.75]">
                 Moade Associates was born from a simple belief, that the law should not only protect ideas, but propel them. We exist for the bold; for entrepreneurs, creators, and leaders who are building tomorrow’s Africa today. Our role is to make sure your vision stands on solid ground, legally sound, strategically aligned, and ready for growth.
               </p>
             </div>
 
-            <div>
+            <div class="rounded-2xl border border-line bg-white/70 p-6 sm:p-8 backdrop-blur-xs shadow-xs">
               <h3 class="text-xl font-bold text-ink">Who We Are</h3>
-              <p class="mt-3">
+              <p class="mt-3 text-body/95 leading-[1.75]">
                 We are a collective of legal and strategic minds working at the intersection of commerce, creativity, and purpose. Our clients are diverse, from founders and family offices to creative entrepreneurs, growing enterprises, and corporate organizations. But what connects them all is a drive to build with integrity, clarity, and impact. That’s the kind of work we love, work that changes how business is done and how stories are told.
               </p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
-              <div class="rounded-2xl border border-line bg-paper p-6 transition-transform duration-200 hover:-translate-y-0.5">
-                <span class="block text-xs font-bold uppercase tracking-wider text-[#8C6527]">Our Philosophy</span>
-                <p class="mt-2 text-sm leading-[1.65] text-ink">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6 pt-1">
+              <div class="rounded-2xl border border-line bg-paper p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-md border-t-2 border-t-[#0C2E3A]">
+                <span class="block text-xs font-bold uppercase tracking-wider text-[#0C2E3A]">Our Philosophy</span>
+                <p class="mt-2.5 text-sm leading-[1.7] text-ink">
                   We believe that the best legal advice doesn’t just respond, it anticipates. It builds frameworks that outlast trends, and systems that empower rather than restrict. We don’t just draft documents; we design the structure for your success.
                 </p>
               </div>
 
-              <div class="rounded-2xl border border-line bg-paper p-6 transition-transform duration-200 hover:-translate-y-0.5">
-                <span class="block text-xs font-bold uppercase tracking-wider text-[#8C6527]">Our Promise</span>
-                <p class="mt-2 text-sm leading-[1.65] text-ink">
+              <div class="rounded-2xl border border-line bg-paper p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-md border-t-2 border-t-[#50CDE2]">
+                <span class="block text-xs font-bold uppercase tracking-wider text-[#0C2E3A]">Our Promise</span>
+                <p class="mt-2.5 text-sm leading-[1.7] text-ink">
                   To walk with you, from idea to execution, from risk to resolution, with excellence, empathy, and strategy.
                 </p>
               </div>
@@ -332,16 +282,13 @@
     <!-- SERVICES SECTION (Reference Design System: Dark Container Horizontal Cards) -->
     <section class="section bg-paper" id="services">
       <div class="shell">
-        <div class="rounded-[2rem] sm:rounded-[2.5rem] border border-white/10 bg-[#142431] p-6 text-white sm:p-10 lg:p-12 shadow-2xl">
+        <div class="rounded-[2rem] sm:rounded-[2.5rem] border border-white/10 bg-[#0C2E3A] p-6 text-white sm:p-10 lg:p-12 shadow-2xl">
           
           <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 border-b border-white/10 pb-8">
             <div>
-              <div class="pill-badge mb-4 inline-flex border-white/20 bg-white/10 text-white backdrop-blur-md">
-                <span class="size-2 rounded-full bg-[#F4B400] shadow-[0_0_10px_#F4B400]"></span>
-                <span class="text-xs font-bold uppercase tracking-[0.16em]">OUR LEGAL SERVICES</span>
-              </div>
+              <p class="section-label text-white/70">OUR LEGAL SERVICES</p>
               <h2 class="text-[clamp(2.1rem,4vw,3.4rem)] font-extrabold leading-[1.08] tracking-tight text-white">
-                Trusted <span class="text-[#F4B400]">Expertise</span>
+                Trusted <span class="text-[#50CDE2]">Expertise</span>
               </h2>
               <p class="mt-3.5 max-w-[54ch] text-sm sm:text-base text-white/90 font-normal leading-[1.65]">
                 Our work blends legal expertise with strategic thinking. We serve as your partner in structure, compliance, and growth, ensuring your business or creative pursuit not only survives, but thrives.
@@ -350,10 +297,10 @@
 
             <!-- Carousel Navigation Controls -->
             <div class="flex items-center gap-3 shrink-0">
-              <button type="button" class="grid size-11 place-items-center rounded-full border border-white/20 bg-white/10 text-white transition-all duration-200 hover:border-[#F4B400] hover:bg-[#F4B400] hover:text-[#141A21] hover:scale-105 active:scale-95 cursor-pointer shadow-sm" id="services-prev" aria-label="Previous service">
+              <button type="button" class="grid size-11 place-items-center rounded-[10px] border border-white/20 bg-white/10 text-white transition-all duration-200 hover:border-[#50CDE2] hover:bg-[#50CDE2] hover:text-[#141A21] hover:scale-105 active:scale-95 cursor-pointer shadow-sm" id="services-prev" aria-label="Previous service">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 19l-7-7 7-7"/></svg>
               </button>
-              <button type="button" class="grid size-11 place-items-center rounded-full border border-white/20 bg-white/10 text-white transition-all duration-200 hover:border-[#F4B400] hover:bg-[#F4B400] hover:text-[#141A21] hover:scale-105 active:scale-95 cursor-pointer shadow-sm" id="services-next" aria-label="Next service">
+              <button type="button" class="grid size-11 place-items-center rounded-[10px] border border-white/20 bg-white/10 text-white transition-all duration-200 hover:border-[#50CDE2] hover:bg-[#50CDE2] hover:text-[#141A21] hover:scale-105 active:scale-95 cursor-pointer shadow-sm" id="services-next" aria-label="Next service">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
               </button>
             </div>
@@ -363,12 +310,9 @@
           <div class="mt-8 flex gap-6 overflow-x-auto pb-6 pt-2 hide-scrollbar scroll-smooth" id="services-track">
             
             <!-- Card 1: Corporate & Commercial Law (Crisp White Card) -->
-            <div class="service-card w-[310px] sm:w-[360px] shrink-0 rounded-2xl sm:rounded-3xl border border-line bg-white p-7 text-ink shadow-xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
+            <div class="service-card w-[310px] sm:w-[360px] shrink-0 rounded-2xl sm:rounded-3xl bg-white p-7 text-ink shadow-[0_8px_28px_rgba(15,26,36,0.08),0_2px_8px_rgba(15,26,36,0.06)] flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_40px_rgba(15,26,36,0.14)]">
               <div>
-                <span class="inline-flex items-center gap-1.5 rounded-full border border-line-strong/20 bg-paper px-3 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-ink shadow-2xs">
-                  <span class="size-1.5 rounded-full bg-[#F4B400]"></span>
-                  <span>Corporate</span>
-                </span>
+                <span class="text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[#0C2E3A]">Corporate</span>
                 <h3 class="mt-4 text-[1.25rem] font-extrabold leading-[1.25] text-ink tracking-tight">Corporate &amp; Commercial Law</h3>
                 <p class="mt-3 text-xs leading-[1.7] text-body">
                   We help organizations operate with clarity and confidence, from company structuring to contract negotiation, joint ventures, and corporate governance. Our commercial practice ensures every deal is designed to protect your interests and unlock opportunity.
@@ -376,45 +320,42 @@
                 <div class="mt-5 border-t border-line/80 pt-4">
                   <span class="block text-[0.7rem] font-bold uppercase tracking-wider text-muted mb-2.5">What we offer:</span>
                   <ul class="space-y-2 text-xs font-semibold text-ink">
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Business Structuring &amp; Incorporation</li>
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Transaction Advisory</li>
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Contract Drafting &amp; Negotiation</li>
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Corporate Governance</li>
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Regulatory Compliance</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Business Structuring &amp; Incorporation</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Transaction Advisory</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Contract Drafting &amp; Negotiation</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Corporate Governance</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Regulatory Compliance</li>
                   </ul>
                 </div>
               </div>
               <div class="mt-6 pt-4 border-t border-line/80 flex items-center justify-between">
-                <button type="button" class="text-xs font-bold uppercase tracking-wider text-ink hover:text-[#8C6527] transition-colors cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
-                <button type="button" class="grid size-9 place-items-center rounded-full bg-paper hover:bg-[#F4B400] text-ink transition-all hover:scale-110 active:scale-95 shadow-xs cursor-pointer" data-open-modal="speak-lawyer-modal" aria-label="Book Consultation">
+                <button type="button" class="text-xs font-bold uppercase tracking-wider text-ink hover:text-[#0C2E3A] transition-colors cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
+                <button type="button" class="grid size-9 place-items-center rounded-[10px] bg-paper hover:bg-[#50CDE2] text-ink transition-colors shadow-xs cursor-pointer" data-open-modal="speak-lawyer-modal" aria-label="Book Consultation">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </button>
               </div>
             </div>
 
             <!-- Card 2: Startups & Entrepreneurship Support (Featured Anchor Dark Slate Card) -->
-            <div class="service-card w-[310px] sm:w-[360px] shrink-0 rounded-2xl sm:rounded-3xl border border-white/20 bg-[#0B1520] p-7 text-white shadow-2xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl relative">
+            <div class="service-card w-[310px] sm:w-[360px] shrink-0 rounded-2xl sm:rounded-3xl border border-white/20 bg-[#08202A] p-7 text-white shadow-2xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl relative">
               <div>
-                <span class="inline-flex items-center gap-1.5 rounded-full border border-[#F4B400]/40 bg-[#F4B400]/15 px-3 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-[#F4B400] shadow-2xs">
-                  <span class="size-1.5 rounded-full bg-[#F4B400] shadow-[0_0_8px_#F4B400]"></span>
-                  <span>Startups &amp; Scaleups</span>
-                </span>
+                <span class="text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[#50CDE2]">Startups &amp; Scaleups</span>
                 <h3 class="mt-4 text-[1.25rem] font-extrabold leading-[1.25] text-white tracking-tight">Startups &amp; Entrepreneurship Support</h3>
                 <p class="mt-3 text-xs leading-[1.7] text-white font-normal">
                   Starting right matters. We provide early-stage founders and growing businesses with the legal and strategic support to turn good ideas into enduring enterprises.
                 </p>
                 <div class="mt-5 border-t border-white/15 pt-4">
-                  <span class="block text-[0.7rem] font-bold uppercase tracking-wider text-[#F4B400] mb-2.5">What we offer:</span>
+                  <span class="block text-[0.7rem] font-bold uppercase tracking-wider text-[#50CDE2] mb-2.5">What we offer:</span>
                   <ul class="space-y-2 text-xs font-medium text-white">
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Founders’ Agreements &amp; Share Structuring</li>
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Investment Readiness &amp; Due Diligence</li>
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Compliance Frameworks for Growth</li>
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Advisory for Accelerators &amp; Programs</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Founders’ Agreements &amp; Share Structuring</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Investment Readiness &amp; Due Diligence</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Compliance Frameworks for Growth</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Advisory for Accelerators &amp; Programs</li>
                   </ul>
                 </div>
               </div>
               <div class="mt-6 pt-4 border-t border-white/15">
-                <button type="button" class="btn btn-gold w-full justify-between text-xs py-2.5 font-bold shadow-md active:scale-[0.98]" data-open-modal="speak-lawyer-modal">
+                <button type="button" class="btn btn-brand w-full justify-between text-xs py-2.5 font-bold shadow-md active:scale-[0.98]" data-open-modal="speak-lawyer-modal">
                   <span>Book Consultation</span>
                   <svg class="arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </button>
@@ -422,45 +363,39 @@
             </div>
 
             <!-- Card 3: Creative Industries & IP Strategy (Crisp White Card) -->
-            <div class="service-card w-[310px] sm:w-[360px] shrink-0 rounded-2xl sm:rounded-3xl border border-line bg-white p-7 text-ink shadow-xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
+            <div class="service-card w-[310px] sm:w-[360px] shrink-0 rounded-2xl sm:rounded-3xl bg-white p-7 text-ink shadow-[0_8px_28px_rgba(15,26,36,0.08),0_2px_8px_rgba(15,26,36,0.06)] flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_40px_rgba(15,26,36,0.14)]">
               <div>
-                <span class="inline-flex items-center gap-1.5 rounded-full border border-line-strong/20 bg-paper px-3 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-ink shadow-2xs">
-                  <span class="size-1.5 rounded-full bg-[#F4B400]"></span>
-                  <span>Creative &amp; IP</span>
-                </span>
+                <span class="text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[#0C2E3A]">Creative &amp; IP</span>
                 <h3 class="mt-4 text-[1.25rem] font-extrabold leading-[1.25] text-ink tracking-tight">Creative Industries &amp; IP Strategy</h3>
                 <p class="mt-3 text-xs leading-[1.7] text-body">
                   Ideas deserve protection, and the people who birth them, structure. We work with creatives, artists, and entertainment brands to protect intellectual property, manage rights, and build systems that sustain their art and enterprise.
                 </p>
-                <p class="mt-2 text-xs italic font-serif text-[#8C6527] border-l-2 border-[#F4B400] pl-2.5">
+                <p class="mt-2 text-xs italic font-serif text-[#0C2E3A] border-l-2 border-[#50CDE2] pl-2.5">
                   “We help creatives build systems that let their art scale — without losing its soul.”
                 </p>
                 <div class="mt-4 border-t border-line/80 pt-4">
                   <span class="block text-[0.7rem] font-bold uppercase tracking-wider text-muted mb-2.5">What we offer:</span>
                   <ul class="space-y-2 text-xs font-semibold text-ink">
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Copyrights, Trademarks &amp; Licensing</li>
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Content Distribution &amp; Monetization Agreements</li>
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Artist &amp; Talent Representation</li>
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>IP Portfolio Strategy &amp; Creative Structures</li>
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Record Label Set-Up &amp; Operations</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Copyrights, Trademarks &amp; Licensing</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Content Distribution &amp; Monetization Agreements</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Artist &amp; Talent Representation</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>IP Portfolio Strategy &amp; Creative Structures</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Record Label Set-Up &amp; Operations</li>
                   </ul>
                 </div>
               </div>
               <div class="mt-6 pt-4 border-t border-line/80 flex items-center justify-between">
-                <button type="button" class="text-xs font-bold uppercase tracking-wider text-ink hover:text-[#8C6527] transition-colors cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
-                <button type="button" class="grid size-9 place-items-center rounded-full bg-paper hover:bg-[#F4B400] text-ink transition-all hover:scale-110 active:scale-95 shadow-xs cursor-pointer" data-open-modal="speak-lawyer-modal" aria-label="Book Consultation">
+                <button type="button" class="text-xs font-bold uppercase tracking-wider text-ink hover:text-[#0C2E3A] transition-colors cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
+                <button type="button" class="grid size-9 place-items-center rounded-[10px] bg-paper hover:bg-[#50CDE2] text-ink transition-colors shadow-xs cursor-pointer" data-open-modal="speak-lawyer-modal" aria-label="Book Consultation">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </button>
               </div>
             </div>
 
             <!-- Card 4: Dispute Resolution & Risk Management (Crisp White Card) -->
-            <div class="service-card w-[310px] sm:w-[360px] shrink-0 rounded-2xl sm:rounded-3xl border border-line bg-white p-7 text-ink shadow-xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
+            <div class="service-card w-[310px] sm:w-[360px] shrink-0 rounded-2xl sm:rounded-3xl bg-white p-7 text-ink shadow-[0_8px_28px_rgba(15,26,36,0.08),0_2px_8px_rgba(15,26,36,0.06)] flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_40px_rgba(15,26,36,0.14)]">
               <div>
-                <span class="inline-flex items-center gap-1.5 rounded-full border border-line-strong/20 bg-paper px-3 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-ink shadow-2xs">
-                  <span class="size-1.5 rounded-full bg-[#F4B400]"></span>
-                  <span>Dispute Resolution</span>
-                </span>
+                <span class="text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[#0C2E3A]">Dispute Resolution</span>
                 <h3 class="mt-4 text-[1.25rem] font-extrabold leading-[1.25] text-ink tracking-tight">Dispute Resolution &amp; Risk Management</h3>
                 <p class="mt-3 text-xs leading-[1.7] text-body">
                   When conflict arises, we aim for clarity, not chaos. Our approach is strategic and peace-driven, resolving issues through negotiation, mediation, or litigation where necessary, while keeping your long-term goals in focus.
@@ -468,28 +403,25 @@
                 <div class="mt-5 border-t border-line/80 pt-4">
                   <span class="block text-[0.7rem] font-bold uppercase tracking-wider text-muted mb-2.5">What we offer:</span>
                   <ul class="space-y-2 text-xs font-semibold text-ink">
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Commercial Dispute Resolution</li>
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Mediation &amp; Arbitration</li>
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Employment &amp; Contractual Disputes</li>
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Risk Audits &amp; Compliance Reviews</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Commercial Dispute Resolution</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Mediation &amp; Arbitration</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Employment &amp; Contractual Disputes</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Risk Audits &amp; Compliance Reviews</li>
                   </ul>
                 </div>
               </div>
               <div class="mt-6 pt-4 border-t border-line/80 flex items-center justify-between">
-                <button type="button" class="text-xs font-bold uppercase tracking-wider text-ink hover:text-[#8C6527] transition-colors cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
-                <button type="button" class="grid size-9 place-items-center rounded-full bg-paper hover:bg-[#F4B400] text-ink transition-all hover:scale-110 active:scale-95 shadow-xs cursor-pointer" data-open-modal="speak-lawyer-modal" aria-label="Book Consultation">
+                <button type="button" class="text-xs font-bold uppercase tracking-wider text-ink hover:text-[#0C2E3A] transition-colors cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
+                <button type="button" class="grid size-9 place-items-center rounded-[10px] bg-paper hover:bg-[#50CDE2] text-ink transition-colors shadow-xs cursor-pointer" data-open-modal="speak-lawyer-modal" aria-label="Book Consultation">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </button>
               </div>
             </div>
 
             <!-- Card 5: Training, Advisory & Capacity Building (Crisp White Card) -->
-            <div class="service-card w-[310px] sm:w-[360px] shrink-0 rounded-2xl sm:rounded-3xl border border-line bg-white p-7 text-ink shadow-xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
+            <div class="service-card w-[310px] sm:w-[360px] shrink-0 rounded-2xl sm:rounded-3xl bg-white p-7 text-ink shadow-[0_8px_28px_rgba(15,26,36,0.08),0_2px_8px_rgba(15,26,36,0.06)] flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_40px_rgba(15,26,36,0.14)]">
               <div>
-                <span class="inline-flex items-center gap-1.5 rounded-full border border-line-strong/20 bg-paper px-3 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-ink shadow-2xs">
-                  <span class="size-1.5 rounded-full bg-[#F4B400]"></span>
-                  <span>Training &amp; Advisory</span>
-                </span>
+                <span class="text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[#0C2E3A]">Training &amp; Advisory</span>
                 <h3 class="mt-4 text-[1.25rem] font-extrabold leading-[1.25] text-ink tracking-tight">Training, Advisory &amp; Capacity Building</h3>
                 <p class="mt-3 text-xs leading-[1.7] text-body">
                   We believe knowledge is structure. Through tailored workshops, advisory programs, and training initiatives, we help teams and entrepreneurs build the systems, culture, and compliance they need to grow sustainably.
@@ -497,16 +429,16 @@
                 <div class="mt-5 border-t border-line/80 pt-4">
                   <span class="block text-[0.7rem] font-bold uppercase tracking-wider text-muted mb-2.5">What we offer:</span>
                   <ul class="space-y-2 text-xs font-semibold text-ink">
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Legal Training for Entrepreneurs &amp; SMEs</li>
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Compliance &amp; Ethics Workshops</li>
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Strategic Advisory for Business Programs</li>
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#F4B400]"></span>Capacity Building for Creative &amp; Impact Projects</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Legal Training for Entrepreneurs &amp; SMEs</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Compliance &amp; Ethics Workshops</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Strategic Advisory for Business Programs</li>
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Capacity Building for Creative &amp; Impact Projects</li>
                   </ul>
                 </div>
               </div>
               <div class="mt-6 pt-4 border-t border-line/80 flex items-center justify-between">
-                <button type="button" class="text-xs font-bold uppercase tracking-wider text-ink hover:text-[#8C6527] transition-colors cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
-                <button type="button" class="grid size-9 place-items-center rounded-full bg-paper hover:bg-[#F4B400] text-ink transition-all hover:scale-110 active:scale-95 shadow-xs cursor-pointer" data-open-modal="speak-lawyer-modal" aria-label="Book Consultation">
+                <button type="button" class="text-xs font-bold uppercase tracking-wider text-ink hover:text-[#0C2E3A] transition-colors cursor-pointer" data-open-modal="speak-lawyer-modal">Book Consultation</button>
+                <button type="button" class="grid size-9 place-items-center rounded-[10px] bg-paper hover:bg-[#50CDE2] text-ink transition-colors shadow-xs cursor-pointer" data-open-modal="speak-lawyer-modal" aria-label="Book Consultation">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </button>
               </div>
@@ -517,8 +449,8 @@
           <div class="mt-8 border-t border-white/10 pt-6 flex flex-wrap items-center justify-between gap-4">
             <span class="text-xs text-white">Need a bespoke legal structure for your enterprise?</span>
             <div class="flex items-center gap-3">
-              <button type="button" class="btn btn-gold text-xs px-5 py-2.5 min-h-10" data-open-modal="speak-lawyer-modal">Book a Session ↗</button>
-              <a class="btn btn-gold-outline text-xs px-5 py-2.5 min-h-10" href="#contact">Talk to Us</a>
+              <button type="button" class="btn btn-brand text-xs px-5 py-2.5 min-h-10" data-open-modal="speak-lawyer-modal">Book a Session ↗</button>
+              <a class="btn btn-brand-outline text-xs px-5 py-2.5 min-h-10" href="#contact">Talk to Us</a>
             </div>
           </div>
 
@@ -532,9 +464,7 @@
         
         <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
           <div>
-            <div class="pill-badge-dark mb-3 inline-flex">
-              <span>THE WORKS WE ARE PROUD OF</span>
-            </div>
+            <p class="section-label mb-3">THE WORKS WE ARE PROUD OF</p>
             <h2 class="display text-[clamp(1.9rem,3.4vw,2.8rem)]">Some Of Our Legal Works</h2>
           </div>
           <p class="max-w-[42ch] text-sm text-body">
@@ -553,37 +483,37 @@
           <div class="divide-y divide-line">
             <div class="grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-4 px-6 py-4 items-center hover:bg-white/50 transition-colors">
               <div class="sm:col-span-5 font-bold text-ink">Corporate Advisory &amp; Restructuring</div>
-              <div class="sm:col-span-3"><span class="inline-block rounded-md bg-paper-deep px-2.5 py-1 text-xs font-semibold text-ink">Corporate Law</span></div>
+              <div class="sm:col-span-3"><span class="text-xs font-semibold text-muted">Corporate Law</span></div>
               <div class="sm:col-span-3 text-xs text-body">Joint venture &amp; cross-border business setup</div>
-              <div class="sm:col-span-1 text-right"><span class="inline-grid size-7 place-items-center rounded-full bg-line text-ink">↗</span></div>
+              <div class="sm:col-span-1 text-right"><span class="text-base font-bold text-[#50CDE2]" aria-hidden="true">↗</span></div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-4 px-6 py-4 items-center hover:bg-white/50 transition-colors">
               <div class="sm:col-span-5 font-bold text-ink">Early-Stage Founders' Share Structuring</div>
-              <div class="sm:col-span-3"><span class="inline-block rounded-md bg-paper-deep px-2.5 py-1 text-xs font-semibold text-ink">Startups</span></div>
+              <div class="sm:col-span-3"><span class="text-xs font-semibold text-muted">Startups</span></div>
               <div class="sm:col-span-3 text-xs text-body">Due diligence, IP assignment &amp; cap tables</div>
-              <div class="sm:col-span-1 text-right"><span class="inline-grid size-7 place-items-center rounded-full bg-line text-ink">↗</span></div>
+              <div class="sm:col-span-1 text-right"><span class="text-base font-bold text-[#50CDE2]" aria-hidden="true">↗</span></div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-4 px-6 py-4 items-center hover:bg-white/50 transition-colors">
               <div class="sm:col-span-5 font-bold text-ink">Record Label &amp; Entertainment Structuring</div>
-              <div class="sm:col-span-3"><span class="inline-block rounded-md bg-paper-deep px-2.5 py-1 text-xs font-semibold text-ink">Creative IP</span></div>
+              <div class="sm:col-span-3"><span class="text-xs font-semibold text-muted">Creative IP</span></div>
               <div class="sm:col-span-3 text-xs text-body">Catalog rights, artist contracts &amp; distribution</div>
-              <div class="sm:col-span-1 text-right"><span class="inline-grid size-7 place-items-center rounded-full bg-line text-ink">↗</span></div>
+              <div class="sm:col-span-1 text-right"><span class="text-base font-bold text-[#50CDE2]" aria-hidden="true">↗</span></div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-4 px-6 py-4 items-center hover:bg-white/50 transition-colors">
               <div class="sm:col-span-5 font-bold text-ink">Commercial Dispute Negotiation &amp; Mediation</div>
-              <div class="sm:col-span-3"><span class="inline-block rounded-md bg-paper-deep px-2.5 py-1 text-xs font-semibold text-ink">Dispute Resolution</span></div>
+              <div class="sm:col-span-3"><span class="text-xs font-semibold text-muted">Dispute Resolution</span></div>
               <div class="sm:col-span-3 text-xs text-body">Pre-litigation arbitration &amp; settlement design</div>
-              <div class="sm:col-span-1 text-right"><span class="inline-grid size-7 place-items-center rounded-full bg-line text-ink">↗</span></div>
+              <div class="sm:col-span-1 text-right"><span class="text-base font-bold text-[#50CDE2]" aria-hidden="true">↗</span></div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-4 px-6 py-4 items-center hover:bg-white/50 transition-colors">
               <div class="sm:col-span-5 font-bold text-ink">Executive Governance &amp; Ethics Workshop</div>
-              <div class="sm:col-span-3"><span class="inline-block rounded-md bg-paper-deep px-2.5 py-1 text-xs font-semibold text-ink">Training &amp; Advisory</span></div>
+              <div class="sm:col-span-3"><span class="text-xs font-semibold text-muted">Training &amp; Advisory</span></div>
               <div class="sm:col-span-3 text-xs text-body">Capacity building for SME leadership teams</div>
-              <div class="sm:col-span-1 text-right"><span class="inline-grid size-7 place-items-center rounded-full bg-line text-ink">↗</span></div>
+              <div class="sm:col-span-1 text-right"><span class="text-base font-bold text-[#50CDE2]" aria-hidden="true">↗</span></div>
             </div>
           </div>
         </div>
@@ -597,39 +527,30 @@
         
         <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10">
           <div>
-            <div class="pill-badge-dark mb-3 inline-flex">
-              <span>TESTIMONIALS</span>
-            </div>
+            <p class="section-label mb-3">TESTIMONIALS</p>
             <h2 class="display text-[clamp(2rem,3.6vw,3rem)]">What Our Clients Say</h2>
           </div>
           
           <div class="flex items-center gap-3">
-            <div class="flex items-center gap-2 rounded-full border border-line-strong/20 bg-white px-3.5 py-1.5 shadow-2xs">
-              <span class="size-2 rounded-full bg-[#F4B400] shadow-[0_0_8px_#F4B400]"></span>
-              <span class="text-xs font-bold tracking-wider text-ink tabular-nums" id="t-count">01 / 09</span>
-            </div>
-            <button type="button" class="grid size-11 place-items-center rounded-full border border-line-strong/30 bg-white text-ink shadow-xs transition-all duration-200 hover:border-[#141A21] hover:bg-[#141A21] hover:text-white hover:scale-105 active:scale-95 cursor-pointer" id="testimonial-prev" aria-label="Previous testimonial">
+            <span class="text-xs font-bold tracking-[0.14em] text-ink tabular-nums" id="t-count" aria-live="polite">01 / 12</span>
+            <button type="button" class="grid size-11 place-items-center rounded-[10px] border border-line-strong/30 bg-white text-ink shadow-xs transition-all duration-200 hover:border-[#141A21] hover:bg-[#141A21] hover:text-white hover:scale-105 active:scale-95 cursor-pointer" id="testimonial-prev" aria-label="Previous testimonial">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 19l-7-7 7-7"/></svg>
             </button>
-            <button type="button" class="grid size-11 place-items-center rounded-full border border-line-strong/30 bg-white text-ink shadow-xs transition-all duration-200 hover:border-[#141A21] hover:bg-[#141A21] hover:text-white hover:scale-105 active:scale-95 cursor-pointer" id="testimonial-next" aria-label="Next testimonial">
+            <button type="button" class="grid size-11 place-items-center rounded-[10px] border border-line-strong/30 bg-white text-ink shadow-xs transition-all duration-200 hover:border-[#141A21] hover:bg-[#141A21] hover:text-white hover:scale-105 active:scale-95 cursor-pointer" id="testimonial-next" aria-label="Next testimonial">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
             </button>
           </div>
         </div>
 
         <!-- Dynamic Testimonial Display Card -->
-        <div class="relative overflow-hidden rounded-3xl border border-line bg-white p-8 sm:p-12 shadow-sm transition-all duration-300" id="testimonial-card">
+        <div class="relative overflow-hidden rounded-3xl bg-white p-8 sm:p-12 shadow-[0_8px_28px_rgba(15,26,36,0.08),0_2px_8px_rgba(15,26,36,0.06)] transition-all duration-300" id="testimonial-card">
           
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             <div class="lg:col-span-8 space-y-4">
-              <div class="flex items-center gap-1.5 text-[#F4B400]">
-                <svg class="size-4 fill-[#F4B400] text-[#F4B400]" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                <svg class="size-4 fill-[#F4B400] text-[#F4B400]" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                <svg class="size-4 fill-[#F4B400] text-[#F4B400]" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                <svg class="size-4 fill-[#F4B400] text-[#F4B400]" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                <svg class="size-4 fill-[#F4B400] text-[#F4B400]" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                <span class="ml-2 text-xs font-bold uppercase tracking-wider text-ink/70">Verified Client Feedback</span>
+              <div class="flex items-center gap-1.5 text-gold-deep">
+                <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <span class="ml-2 text-xs font-bold uppercase tracking-wider text-ink/70">Client Feedback</span>
               </div>
               <blockquote class="text-[clamp(1.05rem,1.4vw,1.35rem)] font-normal leading-[1.65] text-ink font-serif italic" id="t-quote">
                 <!-- Injected via JS -->
@@ -643,6 +564,7 @@
             <div class="lg:col-span-4 flex justify-center lg:justify-end">
               <div class="grid place-items-center size-36 sm:size-44 rounded-2xl border border-line bg-paper p-4">
                 <img src="assets/images/gaise-baba-logo.png" alt="Client Logo" id="t-logo" class="max-h-24 max-w-full object-contain">
+                <span id="t-mono" class="grid size-16 place-items-center rounded-lg border border-line-strong/20 bg-white font-serif text-2xl font-bold text-[#0C2E3A]" style="display:none" aria-hidden="true"></span>
               </div>
             </div>
 
@@ -652,18 +574,32 @@
 
         <!-- Client Logo Strip -->
         <div class="mt-12 border-t border-line pt-8">
-          <p class="text-center text-[0.7rem] font-bold uppercase tracking-[0.18em] text-muted mb-6">Trusted By Leading African Brands &amp; Founders</p>
+          <p class="text-center text-[0.7rem] font-bold uppercase tracking-[0.18em] text-muted mb-6">Brands &amp; founders we work with, across Africa</p>
           <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-12 opacity-80">
-            <img src="assets/images/logo-bme-hd.png" alt="BME Records" class="h-8 w-auto object-contain">
-            <img src="assets/images/logo-artcation.png" alt="Artcation" class="h-8 w-auto object-contain">
-            <img src="assets/images/logo-elara.png" alt="Elara Development" class="h-6 w-auto object-contain">
-            <img src="assets/images/logo-cloudtoch.jpg" alt="Cloudtoch Integrations" class="h-6 w-auto object-contain">
-            <img src="assets/images/gaise-baba-logo.png" alt="Gaise Baba" class="h-8 w-auto object-contain">
-            <img src="assets/images/logo-cobolt.jpg" alt="Cobalt" class="h-7 w-auto object-contain">
-            <img src="assets/images/logo-squaredlab.jpg" alt="Squared Lab" class="h-7 w-auto object-contain">
-            <img src="assets/images/logo-numio.jpg" alt="Numio" class="h-7 w-auto object-contain">
-            <img src="assets/images/logo-ahava.jpg" alt="Ahava Living" class="h-7 w-auto object-contain">
+            <img src="assets/images/logo-bme-hd.png" alt="BME Records" loading="lazy" decoding="async" class="h-8 w-auto object-contain">
+            <img src="assets/images/logo-artcation.png" alt="Artcation" loading="lazy" decoding="async" class="h-8 w-auto object-contain">
+            <img src="assets/images/logo-elara.png" alt="Elara Development" loading="lazy" decoding="async" class="h-6 w-auto object-contain">
+            <img src="assets/images/logo-cloudtoch.jpg" alt="Cloudtoch Integrations" loading="lazy" decoding="async" class="h-6 w-auto object-contain">
+            <img src="assets/images/gaise-baba-logo.png" alt="Gaise Baba" loading="lazy" decoding="async" class="h-8 w-auto object-contain">
+            <img src="assets/images/logo-cobolt.jpg" alt="Cobalt" loading="lazy" decoding="async" class="h-7 w-auto object-contain">
+            <img src="assets/images/logo-squaredlab.jpg" alt="Squared Lab" loading="lazy" decoding="async" class="h-7 w-auto object-contain">
+            <img src="assets/images/logo-numio.jpg" alt="Numio" loading="lazy" decoding="async" class="h-7 w-auto object-contain">
+            <img src="assets/images/logo-ahava.jpg" alt="Ahava Living" loading="lazy" decoding="async" class="h-7 w-auto object-contain">
           </div>
+        </div>
+
+        <!-- Client Feedback & Advisory Roster (Verbatim Client List from Practice) -->
+        <div class="mt-10 rounded-2xl border border-line-strong/15 bg-white p-6 sm:p-8 shadow-xs">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-line pb-4 mb-6">
+            <div>
+              <span class="text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[#0C2E3A]">Client Feedback &amp; Advisory Roster</span>
+              <h3 class="text-base sm:text-lg font-bold text-ink">Trusted By Forward-Thinking Founders, Creators &amp; Enterprises</h3>
+            </div>
+            <span class="text-xs font-semibold text-muted">16+ Select Advisory Retainers</span>
+          </div>
+          <p class="text-sm sm:text-[0.95rem] font-bold leading-[2.2] text-ink">
+            Five28 <span class="text-[#50CDE2]" aria-hidden="true">·</span> Iconic <span class="text-[#50CDE2]" aria-hidden="true">·</span> Ashtag <span class="text-[#50CDE2]" aria-hidden="true">·</span> Mr Wang <span class="text-[#50CDE2]" aria-hidden="true">·</span> Adimsira <span class="text-[#50CDE2]" aria-hidden="true">·</span> Prinda <span class="text-[#50CDE2]" aria-hidden="true">·</span> 88 Capital <span class="text-[#50CDE2]" aria-hidden="true">·</span> Mrs Praise <span class="text-[#50CDE2]" aria-hidden="true">·</span> Buka Bistro <span class="text-[#50CDE2]" aria-hidden="true">·</span> Street Church <span class="text-[#50CDE2]" aria-hidden="true">·</span> Yellow Oak <span class="text-[#50CDE2]" aria-hidden="true">·</span> Inspector Savage <span class="text-[#50CDE2]" aria-hidden="true">·</span> Iconic Stuff <span class="text-[#50CDE2]" aria-hidden="true">·</span> Billobeat <span class="text-[#50CDE2]" aria-hidden="true">·</span> Eureka <span class="text-[#50CDE2]" aria-hidden="true">·</span> Mr Deeosa
+          </p>
         </div>
 
       </div>
@@ -675,9 +611,7 @@
         <div class="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16 items-start">
           
           <div class="lg:col-span-5">
-            <div class="pill-badge-dark mb-4 inline-flex">
-              <span>GET IN TOUCH</span>
-            </div>
+            <p class="section-label mb-4">GET IN TOUCH</p>
             <h2 class="display text-[clamp(2.1rem,3.8vw,3.2rem)]">Let’s Build Something That Lasts</h2>
             <p class="mt-4 text-base leading-[1.7] text-body">
               Whether you’re structuring a new venture, protecting creative work, or seeking strategic legal support, we’re here to help you move forward with clarity and confidence.
@@ -686,15 +620,15 @@
             <dl class="mt-8 space-y-4 border-t border-line pt-6 text-sm">
               <div class="flex items-baseline justify-between border-b border-line pb-3">
                 <dt class="font-bold uppercase tracking-wider text-xs text-muted">Email:</dt>
-                <dd><a class="font-bold text-ink hover:text-[#F4B400]" href="mailto:admin@moadeassociates.com">admin@moadeassociates.com</a></dd>
+                <dd><a class="font-bold text-ink hover:text-[#50CDE2]" href="mailto:admin@moadeassociates.com">admin@moadeassociates.com</a></dd>
               </div>
               <div class="flex items-baseline justify-between border-b border-line pb-3">
                 <dt class="font-bold uppercase tracking-wider text-xs text-muted">Phone:</dt>
-                <dd><a class="font-bold text-ink hover:text-[#F4B400]" href="tel:+2348165528752">+234 (816 552 8752)</a></dd>
+                <dd><a class="font-bold text-ink hover:text-[#50CDE2]" href="tel:+2348165528752">+234 (816 552 8752)</a></dd>
               </div>
               <div class="flex items-baseline justify-between border-b border-line pb-3">
                 <dt class="font-bold uppercase tracking-wider text-xs text-muted">WhatsApp:</dt>
-                <dd><a class="font-bold text-ink hover:text-[#F4B400]" href="https://wa.me/2348153380312" target="_blank" rel="noopener">0815 338 0312</a></dd>
+                <dd><a class="font-bold text-ink hover:text-[#50CDE2]" href="https://wa.me/2348153380312" target="_blank" rel="noopener">0815 338 0312</a></dd>
               </div>
               <div class="flex items-baseline justify-between border-b border-line pb-3">
                 <dt class="font-bold uppercase tracking-wider text-xs text-muted">Office Hours:</dt>
@@ -702,12 +636,12 @@
               </div>
             </dl>
 
-            <p class="mt-8 text-sm italic text-body border-l-2 border-[#F4B400] pl-4">
+            <p class="mt-8 text-sm italic text-body border-l-2 border-[#50CDE2] pl-4">
               “We’re built for collaboration, across industries, across borders. Wherever you are, we can work with you.”
             </p>
 
             <div class="mt-8 flex gap-3">
-              <button type="button" class="btn btn-gold text-xs px-5" data-open-modal="speak-lawyer-modal">
+              <button type="button" class="btn btn-brand text-xs px-5" data-open-modal="speak-lawyer-modal">
                 <span>Book a Consultation ↗</span>
               </button>
               <button type="button" class="btn btn-outline text-xs px-5" data-open-modal="join-us-modal">
@@ -722,6 +656,7 @@
             <p class="mt-1 text-xs text-muted">We respond to all consultation inquiries within 24 business hours.</p>
 
             <form class="mt-6 space-y-4" id="consultation-form">
+              <input type="text" name="company_website" tabindex="-1" autocomplete="off" class="absolute left-[-9999px] size-0 opacity-0" aria-hidden="true">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div class="field">
                   <label for="c-name">Full Name *</label>
@@ -762,8 +697,8 @@
               </div>
 
               <div class="pt-2 flex flex-col sm:flex-row gap-3">
-                <button type="submit" class="btn btn-gold flex-1">
-                  <span>Send Message to admin@moadeassociates.com</span>
+                <button type="submit" class="btn btn-brand flex-1">
+                  <span>Send Message</span>
                   <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
                 </button>
                 <button type="button" class="btn btn-outline" id="c-whatsapp-btn">
@@ -780,7 +715,7 @@
   </main>
 
   <!-- SITE FOOTER -->
-  <footer class="site-footer bg-[#0F1A24] py-14 text-white">
+  <footer class="site-footer bg-[#08202A] py-14 text-white">
     <div class="shell">
       <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 pb-12 border-b border-white/10">
         
@@ -789,34 +724,34 @@
           <p class="mt-4 text-xs leading-[1.7] text-white">
             MOADE Associates is a forward-thinking commercial legal practice and consulting firm helping businesses, creatives, and entrepreneurs build systems that endure.
           </p>
-          <p class="mt-3 text-xs text-[#F4B400] font-bold">Lekki, Lagos, Nigeria</p>
+          <p class="mt-3 text-xs text-[#50CDE2] font-bold">Lekki, Lagos, Nigeria</p>
         </div>
 
         <div>
-          <h4 class="text-xs font-bold uppercase tracking-widest text-[#F4B400]">Quick Links</h4>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-[#50CDE2]">Quick Links</h4>
           <ul class="mt-4 space-y-2 text-xs font-medium">
-            <li><a class="text-white hover:text-[#F4B400] transition-colors" href="#top">Home</a></li>
-            <li><a class="text-white hover:text-[#F4B400] transition-colors" href="#about">About Our Practice</a></li>
-            <li><a class="text-white hover:text-[#F4B400] transition-colors" href="#services">Our Legal Services</a></li>
-            <li><a class="text-white hover:text-[#F4B400] transition-colors" href="#works">Legal Works</a></li>
-            <li><a class="text-white hover:text-[#F4B400] transition-colors" href="#testimonials">Client Testimonials</a></li>
+            <li><a class="text-white hover:text-[#50CDE2] transition-colors" href="#top">Home</a></li>
+            <li><a class="text-white hover:text-[#50CDE2] transition-colors" href="#about">About Our Practice</a></li>
+            <li><a class="text-white hover:text-[#50CDE2] transition-colors" href="#services">Our Legal Services</a></li>
+            <li><a class="text-white hover:text-[#50CDE2] transition-colors" href="#works">Legal Works</a></li>
+            <li><a class="text-white hover:text-[#50CDE2] transition-colors" href="#testimonials">Client Testimonials</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="text-xs font-bold uppercase tracking-widest text-[#F4B400]">Get In Touch</h4>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-[#50CDE2]">Get In Touch</h4>
           <ul class="mt-4 space-y-2 text-xs font-medium text-white">
-            <li>Email: <a class="text-white hover:text-[#F4B400] transition-colors" href="mailto:admin@moadeassociates.com">admin@moadeassociates.com</a></li>
-            <li>Phone: <a class="text-white hover:text-[#F4B400] transition-colors" href="tel:+2348165528752">+234 (816 552 8752)</a></li>
-            <li>WhatsApp: <a class="text-white hover:text-[#F4B400] transition-colors" href="https://wa.me/2348153380312">0815 338 0312</a></li>
+            <li>Email: <a class="text-white hover:text-[#50CDE2] transition-colors" href="mailto:admin@moadeassociates.com">admin@moadeassociates.com</a></li>
+            <li>Phone: <a class="text-white hover:text-[#50CDE2] transition-colors" href="tel:+2348165528752">+234 (816 552 8752)</a></li>
+            <li>WhatsApp: <a class="text-white hover:text-[#50CDE2] transition-colors" href="https://wa.me/2348153380312">0815 338 0312</a></li>
             <li>Hours: Mon – Fri, 9 AM – 4 PM</li>
           </ul>
         </div>
 
         <div>
-          <h4 class="text-xs font-bold uppercase tracking-widest text-[#F4B400]">Opportunities</h4>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-[#50CDE2]">Opportunities</h4>
           <p class="mt-4 text-xs leading-[1.6] text-white">Looking to join our legal collective in Lagos?</p>
-          <button type="button" class="btn btn-gold mt-3 text-xs px-4 py-2 min-h-9" data-open-modal="join-us-modal">
+          <button type="button" class="btn btn-brand mt-3 text-xs px-4 py-2 min-h-9" data-open-modal="join-us-modal">
             <span>Apply for Employment</span>
           </button>
         </div>
@@ -826,24 +761,121 @@
       <div class="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white">
         <p>© MOADE Associates 2025. All rights reserved.</p>
         <div class="flex gap-6">
-          <button type="button" class="text-white hover:text-[#F4B400] transition-colors cursor-pointer" data-open-modal="privacy-modal">Privacy Policy</button>
-          <button type="button" class="text-white hover:text-[#F4B400] transition-colors cursor-pointer" data-open-modal="terms-modal">Terms &amp; Conditions</button>
-          <button type="button" class="text-white hover:text-[#F4B400] transition-colors cursor-pointer" data-open-modal="speak-lawyer-modal">Speak to a Lawyer</button>
+          <button type="button" class="text-white hover:text-[#50CDE2] transition-colors cursor-pointer" data-open-modal="privacy-modal">Privacy Policy</button>
+          <button type="button" class="text-white hover:text-[#50CDE2] transition-colors cursor-pointer" data-open-modal="terms-modal">Terms &amp; Conditions</button>
+          <button type="button" class="text-white hover:text-[#50CDE2] transition-colors cursor-pointer" data-open-modal="speak-lawyer-modal">Speak to a Lawyer</button>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- MOBILE STICKY FLOATING ACTION BAR -->
-  <div class="mobile-bar" aria-label="Quick actions">
-    <a href="https://wa.me/2348153380312" target="_blank" rel="noopener" class="flex h-12 flex-1 items-center justify-center gap-2 rounded-full border border-line-strong/30 bg-white px-3 text-[0.82rem] font-bold text-ink shadow-xs transition-colors hover:bg-paper-deep focus-visible:outline-[#F4B400] active:scale-[0.98]">
-      <svg class="size-[18px] shrink-0 text-[#25D366]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.55-3.7 8.21-8.23 8.21Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
-      <span>WhatsApp</span>
-    </a>
-    <button type="button" class="btn btn-gold h-12 flex-[1.3] justify-center px-4 text-[0.82rem] font-bold active:scale-[0.98]" data-open-modal="speak-lawyer-modal">
-      <span>Speak to a lawyer</span>
-      <svg class="arrow shrink-0" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-    </button>
+  <!-- MOBILE FLOATING WHATSAPP BUTTON (Circular FAB with Official WhatsApp Icon Only) -->
+  <a href="https://wa.me/2348153380312" target="_blank" rel="noopener" class="whatsapp-float group" aria-label="Chat with MOADE Associates on WhatsApp">
+    <svg class="size-7 fill-white transition-transform duration-300 group-hover:scale-110 group-active:scale-95" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.55-3.7 8.21-8.23 8.21Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/>
+    </svg>
+  </a>
+
+  <!-- MODAL: SEARCH PRACTICE AREAS & FIRM -->
+  <div class="modal-backdrop" id="search-modal" role="dialog" aria-modal="true" aria-labelledby="search-modal-title">
+    <div class="modal-panel max-w-xl">
+      <div class="flex items-center justify-between border-b border-line pb-4">
+        <div class="flex items-center gap-3">
+          <div class="grid size-9 place-items-center rounded-lg bg-[#50CDE2]/15 text-[#50CDE2]">
+            <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </div>
+          <div>
+            <span class="text-[0.68rem] font-bold uppercase tracking-widest text-[#50CDE2]">Practice &amp; Resource Directory</span>
+            <h3 class="text-xl font-bold text-ink" id="search-modal-title">Search MOADE Associates</h3>
+          </div>
+        </div>
+        <button type="button" class="grid size-9 place-items-center rounded-md border border-line text-ink hover:bg-paper-deep transition-colors cursor-pointer" data-close-modal aria-label="Close search">✕</button>
+      </div>
+
+      <div class="mt-5">
+        <div class="relative">
+          <input type="text" id="site-search-input" placeholder="Search practice areas, legal services, publications..." autocomplete="off" class="w-full rounded-xl border border-line-strong/30 bg-white px-4 py-3 text-sm font-medium text-ink placeholder:text-muted outline-none transition-all focus:border-[#50CDE2] focus:ring-2 focus:ring-[#50CDE2]/20">
+          <div class="absolute right-3.5 top-3.5 hidden sm:flex items-center gap-1.5 text-[0.68rem] font-bold text-muted bg-paper px-2 py-0.5 rounded border border-line">
+            <span class="size-1.5 rounded-full bg-[#F4B400]"></span>
+            <span>ESC to close</span>
+          </div>
+        </div>
+
+        <div class="mt-4 max-h-[380px] overflow-y-auto space-y-2 pr-1" id="search-results-list">
+          <a href="#services" class="search-entry flex items-center justify-between p-3 rounded-xl border border-line bg-paper/60 hover:bg-white hover:border-[#50CDE2]/40 transition-all text-xs group" data-close-modal>
+            <div>
+              <span class="block font-bold text-ink group-hover:text-[#0C2E3A]">Corporate &amp; Commercial Law</span>
+              <span class="text-[0.72rem] text-muted">Business structuring, governance, joint ventures &amp; regulatory compliance</span>
+            </div>
+            <span class="text-xs font-bold text-[#50CDE2] shrink-0 ml-3">Services ↗</span>
+          </a>
+
+          <a href="#services" class="search-entry flex items-center justify-between p-3 rounded-xl border border-line bg-paper/60 hover:bg-white hover:border-[#50CDE2]/40 transition-all text-xs group" data-close-modal>
+            <div>
+              <span class="block font-bold text-ink group-hover:text-[#0C2E3A]">Startups &amp; Entrepreneurship Support</span>
+              <span class="text-[0.72rem] text-muted">Founders' agreements, share structuring &amp; investment readiness</span>
+            </div>
+            <span class="text-xs font-bold text-[#50CDE2] shrink-0 ml-3">Services ↗</span>
+          </a>
+
+          <a href="#services" class="search-entry flex items-center justify-between p-3 rounded-xl border border-line bg-paper/60 hover:bg-white hover:border-[#50CDE2]/40 transition-all text-xs group" data-close-modal>
+            <div>
+              <span class="block font-bold text-ink group-hover:text-[#0C2E3A]">Creative Industries &amp; IP Strategy</span>
+              <span class="text-[0.72rem] text-muted">Copyrights, trademarks, artist representation &amp; catalog monetization</span>
+            </div>
+            <span class="text-xs font-bold text-[#50CDE2] shrink-0 ml-3">Services ↗</span>
+          </a>
+
+          <a href="#services" class="search-entry flex items-center justify-between p-3 rounded-xl border border-line bg-paper/60 hover:bg-white hover:border-[#50CDE2]/40 transition-all text-xs group" data-close-modal>
+            <div>
+              <span class="block font-bold text-ink group-hover:text-[#0C2E3A]">Dispute Resolution &amp; Risk Management</span>
+              <span class="text-[0.72rem] text-muted">Commercial negotiation, mediation, arbitration &amp; compliance audits</span>
+            </div>
+            <span class="text-xs font-bold text-[#50CDE2] shrink-0 ml-3">Services ↗</span>
+          </a>
+
+          <a href="#services" class="search-entry flex items-center justify-between p-3 rounded-xl border border-line bg-paper/60 hover:bg-white hover:border-[#50CDE2]/40 transition-all text-xs group" data-close-modal>
+            <div>
+              <span class="block font-bold text-ink group-hover:text-[#0C2E3A]">Training, Advisory &amp; Capacity Building</span>
+              <span class="text-[0.72rem] text-muted">Executive legal workshops, ethics &amp; governance capacity building</span>
+            </div>
+            <span class="text-xs font-bold text-[#50CDE2] shrink-0 ml-3">Services ↗</span>
+          </a>
+
+          <a href="#about" class="search-entry flex items-center justify-between p-3 rounded-xl border border-line bg-paper/60 hover:bg-white hover:border-[#50CDE2]/40 transition-all text-xs group" data-close-modal>
+            <div>
+              <span class="block font-bold text-ink group-hover:text-[#0C2E3A]">About MOADE Associates</span>
+              <span class="text-[0.72rem] text-muted">Our story, philosophy, promise &amp; practice narrative</span>
+            </div>
+            <span class="text-xs font-bold text-[#50CDE2] shrink-0 ml-3">About ↗</span>
+          </a>
+
+          <a href="#works" class="search-entry flex items-center justify-between p-3 rounded-xl border border-line bg-paper/60 hover:bg-white hover:border-[#50CDE2]/40 transition-all text-xs group" data-close-modal>
+            <div>
+              <span class="block font-bold text-ink group-hover:text-[#0C2E3A]">Legal Works &amp; Portfolio</span>
+              <span class="text-[0.72rem] text-muted">Corporate structuring, cap tables, label setups &amp; transactions</span>
+            </div>
+            <span class="text-xs font-bold text-[#50CDE2] shrink-0 ml-3">Works ↗</span>
+          </a>
+
+          <a href="#testimonials" class="search-entry flex items-center justify-between p-3 rounded-xl border border-line bg-paper/60 hover:bg-white hover:border-[#50CDE2]/40 transition-all text-xs group" data-close-modal>
+            <div>
+              <span class="block font-bold text-ink group-hover:text-[#0C2E3A]">Client Testimonials &amp; Roster</span>
+              <span class="text-[0.72rem] text-muted">Gaise Baba, BME Records, Artcation, Elara, Cobalt, Numio...</span>
+            </div>
+            <span class="text-xs font-bold text-[#50CDE2] shrink-0 ml-3">Testimonials ↗</span>
+          </a>
+
+          <button type="button" class="w-full text-left search-entry flex items-center justify-between p-3 rounded-xl border border-line bg-paper/60 hover:bg-white hover:border-[#50CDE2]/40 transition-all text-xs group cursor-pointer" data-open-modal="speak-lawyer-modal">
+            <div>
+              <span class="block font-bold text-ink group-hover:text-[#0C2E3A]">Direct Legal Consultation</span>
+              <span class="text-[0.72rem] text-muted">Schedule an appointment with our managing counsel</span>
+            </div>
+            <span class="text-xs font-bold text-[#50CDE2] shrink-0 ml-3">Consult ↗</span>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- MODAL: APPLICATION FOR EMPLOYMENT (JOIN US TAB) -->
@@ -851,17 +883,18 @@
     <div class="modal-panel">
       <div class="flex items-center justify-between border-b border-line pb-4">
         <div>
-          <span class="text-xs font-bold uppercase tracking-wider text-[#F4B400]">Careers at MOADE Associates</span>
+          <span class="text-xs font-bold uppercase tracking-wider text-[#50CDE2]">Careers at MOADE Associates</span>
           <h3 class="text-2xl font-bold text-ink" id="join-modal-title">Application for Employment Form</h3>
         </div>
-        <button type="button" class="grid size-9 place-items-center rounded-full border border-line text-ink hover:bg-paper-deep transition-colors cursor-pointer" data-close-modal aria-label="Close modal">✕</button>
+        <button type="button" class="grid size-9 place-items-center rounded-md border border-line text-ink hover:bg-paper-deep transition-colors cursor-pointer" data-close-modal aria-label="Close modal">✕</button>
       </div>
 
       <p class="mt-3 text-xs leading-[1.6] text-body">
-        Thank you for your interest in joining MOADE Associates. Applications are reviewed directly by our recruitment committee at <strong class="text-ink">eamoade@gmail.com</strong>.
+        Thank you for your interest in joining MOADE Associates. Submitting this form emails your details and CV (PDF or Word, up to 3 MB) directly to our recruitment team at <strong class="text-ink">eamoade@gmail.com</strong>.
       </p>
 
       <form class="mt-6 space-y-4" id="employment-form">
+        <input type="text" name="company_website" tabindex="-1" autocomplete="off" class="absolute left-[-9999px] size-0 opacity-0" aria-hidden="true">
         <h4 class="text-xs font-bold uppercase tracking-widest text-ink">Candidate Details</h4>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -903,7 +936,7 @@
           <h4 class="text-xs font-bold uppercase tracking-widest text-ink mb-2">Application Uploads</h4>
           <div class="field">
             <label for="emp-resume">Resume / CV (PDF, DOC, DOCX) *</label>
-            <input type="file" id="emp-resume" name="resume" accept=".pdf,.doc,.docx" required class="cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-bold file:bg-[#F4B400] file:text-[#0F1A24] hover:file:bg-[#E0A300]">
+            <input type="file" id="emp-resume" name="resume" accept=".pdf,.doc,.docx" required class="cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-xs file:font-bold file:bg-[#50CDE2] file:text-[#0F1A24] hover:file:bg-[#E0A300]">
           </div>
         </div>
 
@@ -913,8 +946,8 @@
         </div>
 
         <div class="pt-3 border-t border-line">
-          <button type="submit" class="btn btn-gold w-full justify-center">
-            <span>Submit Application to eamoade@gmail.com</span>
+          <button type="submit" class="btn btn-brand w-full justify-center">
+            <span>Submit Application</span>
             <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
           </button>
         </div>
@@ -928,10 +961,10 @@
     <div class="modal-panel">
       <div class="flex items-center justify-between border-b border-line pb-4">
         <div>
-          <span class="text-xs font-bold uppercase tracking-wider text-[#F4B400]">Direct Consultation Gateway</span>
+          <span class="text-xs font-bold uppercase tracking-wider text-[#50CDE2]">Direct Consultation Gateway</span>
           <h3 class="text-2xl font-bold text-ink" id="speak-modal-title">Speak to a Lawyer</h3>
         </div>
-        <button type="button" class="grid size-9 place-items-center rounded-full border border-line text-ink hover:bg-paper-deep transition-colors cursor-pointer" data-close-modal aria-label="Close modal">✕</button>
+        <button type="button" class="grid size-9 place-items-center rounded-md border border-line text-ink hover:bg-paper-deep transition-colors cursor-pointer" data-close-modal aria-label="Close modal">✕</button>
       </div>
 
       <p class="mt-3 text-xs leading-[1.6] text-body">
@@ -939,6 +972,7 @@
       </p>
 
       <form class="mt-6 space-y-4" id="speak-modal-form">
+        <input type="text" name="company_website" tabindex="-1" autocomplete="off" class="absolute left-[-9999px] size-0 opacity-0" aria-hidden="true">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div class="field">
             <label for="spk-name">Your Name *</label>
@@ -979,8 +1013,8 @@
         </div>
 
         <div class="pt-3 border-t border-line flex flex-col sm:flex-row gap-3">
-          <button type="submit" class="btn btn-gold flex-1 justify-center">
-            <span>Send to admin@moadeassociates.com</span>
+          <button type="submit" class="btn btn-brand flex-1 justify-center">
+            <span>Send Request</span>
             <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
           </button>
           <button type="button" class="btn btn-outline" id="spk-whatsapp-btn">
@@ -997,11 +1031,11 @@
     <div class="modal-panel max-w-3xl">
       <div class="flex items-center justify-between border-b border-line pb-4">
         <div>
-          <span class="text-xs font-bold uppercase tracking-wider text-[#F4B400]">Regulatory &amp; Compliance</span>
+          <span class="text-xs font-bold uppercase tracking-wider text-[#50CDE2]">Regulatory &amp; Compliance</span>
           <h3 class="text-2xl font-bold text-ink" id="privacy-title">Privacy Policy</h3>
           <p class="text-xs text-muted">Last Updated: October 2025</p>
         </div>
-        <button type="button" class="grid size-9 place-items-center rounded-full border border-line text-ink hover:bg-paper-deep transition-colors cursor-pointer" data-close-modal aria-label="Close modal">✕</button>
+        <button type="button" class="grid size-9 place-items-center rounded-md border border-line text-ink hover:bg-paper-deep transition-colors cursor-pointer" data-close-modal aria-label="Close modal">✕</button>
       </div>
 
       <div class="mt-6 space-y-6 text-xs sm:text-sm leading-[1.75] text-body">
@@ -1061,7 +1095,7 @@
 
         <div>
           <h4 class="font-bold text-ink text-sm sm:text-base">10. Contact Us</h4>
-          <p class="mt-1">If you have questions about this Privacy Policy or how your data is handled, please contact: 📧 <a class="font-bold text-[#F4B400]" href="mailto:admin@moadeassociates.com">admin@moadeassociates.com</a></p>
+          <p class="mt-1">If you have questions about this Privacy Policy or how your data is handled, please contact us by email: <a class="font-bold text-[#50CDE2]" href="mailto:admin@moadeassociates.com">admin@moadeassociates.com</a></p>
         </div>
       </div>
     </div>
@@ -1072,11 +1106,11 @@
     <div class="modal-panel max-w-3xl">
       <div class="flex items-center justify-between border-b border-line pb-4">
         <div>
-          <span class="text-xs font-bold uppercase tracking-wider text-[#F4B400]">Legal Terms</span>
+          <span class="text-xs font-bold uppercase tracking-wider text-[#50CDE2]">Legal Terms</span>
           <h3 class="text-2xl font-bold text-ink" id="terms-title">Terms &amp; Conditions</h3>
           <p class="text-xs text-muted">Last Updated: October 2025</p>
         </div>
-        <button type="button" class="grid size-9 place-items-center rounded-full border border-line text-ink hover:bg-paper-deep transition-colors cursor-pointer" data-close-modal aria-label="Close modal">✕</button>
+        <button type="button" class="grid size-9 place-items-center rounded-md border border-line text-ink hover:bg-paper-deep transition-colors cursor-pointer" data-close-modal aria-label="Close modal">✕</button>
       </div>
 
       <div class="mt-6 space-y-6 text-xs sm:text-sm leading-[1.75] text-body">
@@ -1124,7 +1158,7 @@
 
         <div>
           <h4 class="font-bold text-ink text-sm sm:text-base">9. Contact Us</h4>
-          <p class="mt-1">If you have questions regarding these Terms, please contact: 📧 <a class="font-bold text-[#F4B400]" href="mailto:admin@moadeassociates.com">admin@moadeassociates.com</a></p>
+          <p class="mt-1">If you have questions regarding these Terms, please contact us by email: <a class="font-bold text-[#50CDE2]" href="mailto:admin@moadeassociates.com">admin@moadeassociates.com</a></p>
         </div>
       </div>
     </div>

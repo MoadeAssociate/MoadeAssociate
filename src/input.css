@@ -13,23 +13,28 @@
   --color-ink: #141A21;
   --color-ink-soft: #242D38;
   --color-body: #4A515A;
-  --color-muted: #6E7781;
+  --color-muted: #59626E;
   --color-line: rgba(87, 87, 87, 0.14);
   --color-line-strong: rgba(20, 26, 33, 0.22);
   --color-line-light: rgba(255, 255, 255, 0.12);
 
-  --color-cyan: #5DE1E6;
-  --color-cyan-hover: #45D4D9;
-  --color-cyan-deep: #076A72;
+  --color-cyan: #50CDE2;
+  --color-cyan-hover: #6DE0F2;
+  --color-cyan-deep: #08222C;
+  --color-brand-teal: #0C2E3A;
+  --color-brand-teal-deep: #08202A;
+  --color-brand-teal-light: #123C4B;
+  --color-brand-cyan: #50CDE2;
+  --color-brand-cyan-hover: #6DE0F2;
 
   --color-gold: #F4B400;
   --color-gold-hover: #E0A300;
   --color-gold-deep: #8C6527;
   --color-gold-light: #FFF9E6;
 
-  --color-slate-card: #142431;
-  --color-slate-dark: #0F1A24;
-  --color-slate-deep: #091017;
+  --color-slate-card: #0C2E3A;
+  --color-slate-dark: #08202A;
+  --color-slate-deep: #05161D;
 
   --color-paper-on-ink: #F5F2EC;
   --color-muted-on-ink: #A3A3A3;
@@ -67,20 +72,20 @@
   }
 
   ::selection {
-    background: var(--color-gold);
-    color: #0F1A24;
+    background: var(--color-cyan);
+    color: #0C2E3A;
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-gold);
+    outline: 2px solid var(--color-cyan);
     outline-offset: 3px;
   }
 
   .bg-ink :focus-visible,
   .bg-slate-card :focus-visible,
   .site-footer :focus-visible,
-  .mobile-bar :focus-visible {
-    outline-color: var(--color-gold);
+  .whatsapp-float:focus-visible {
+    outline-color: var(--color-cyan);
   }
 
   /* Impeccable Typography Balance */
@@ -124,22 +129,45 @@
     @apply border-t border-line py-16 sm:py-20 lg:py-24;
   }
 
-  /* Badges & Kickers */
-  .pill-badge {
-    @apply inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-1 text-[0.7rem] font-bold uppercase tracking-[0.16em] text-white/95 backdrop-blur-md shadow-xs transition-all duration-200 hover:border-white/30 hover:bg-white/15;
-  }
-
-  .pill-badge-dark {
-    @apply inline-flex items-center gap-2 rounded-full border border-ink/15 bg-white/80 px-3.5 py-1 text-[0.7rem] font-bold uppercase tracking-[0.16em] text-ink shadow-xs transition-all duration-200 hover:border-ink/25 hover:bg-white;
+  /* Editorial labels (formerly pill chips) */
+  .section-label {
+    @apply block text-[0.72rem] font-bold uppercase leading-[1.4] tracking-[0.2em] text-[#0C2E3A];
   }
 
   /* Buttons */
   .btn {
-    @apply inline-flex min-h-[46px] items-center justify-center gap-2.5 rounded-full border px-6 text-center font-sans text-[0.84rem] font-bold leading-[1.2] tracking-[0.02em] transition-all duration-200 cursor-pointer active:scale-[0.98];
+    @apply inline-flex min-h-[46px] items-center justify-center gap-2.5 rounded-[10px] border px-6 text-center font-sans text-[0.84rem] font-bold leading-[1.2] tracking-[0.02em] transition-all duration-200 cursor-pointer active:scale-[0.98];
+  }
+
+  .btn-brand,
+  .btn-cyan {
+    @apply border-transparent bg-[#50CDE2] text-[#0C2E3A] font-bold shadow-[0_2px_14px_rgba(80,205,226,0.32)] hover:bg-[#6DE0F2] hover:shadow-[0_4px_20px_rgba(80,205,226,0.48)] hover:-translate-y-0.5;
+  }
+
+  .btn-brand .arrow,
+  .btn-cyan .arrow {
+    @apply transition-transform duration-200;
+  }
+
+  .btn-brand:hover .arrow,
+  .btn-cyan:hover .arrow {
+    @apply translate-x-1;
+  }
+
+  .btn-pill {
+    @apply inline-flex min-h-[42px] items-center justify-center gap-2.5 rounded-full border border-white/40 bg-white/10 px-6 py-2 text-center font-sans text-[0.82rem] font-semibold tracking-[0.03em] text-white backdrop-blur-md transition-all duration-200 hover:border-[#50CDE2] hover:bg-[#50CDE2]/20 hover:text-[#50CDE2] hover:-translate-y-0.5 active:scale-95 cursor-pointer;
+  }
+
+  .btn-pill .arrow {
+    @apply transition-transform duration-200;
+  }
+
+  .btn-pill:hover .arrow {
+    @apply translate-x-1;
   }
 
   .btn-gold {
-    @apply border-gold bg-gold text-[#141A21] font-bold shadow-[0_4px_16px_rgba(244,180,0,0.32)] hover:bg-gold-hover hover:shadow-[0_6px_22px_rgba(244,180,0,0.48)] hover:-translate-y-0.5;
+    @apply border-transparent bg-gold text-[#141A21] font-bold shadow-[0_2px_10px_rgba(244,180,0,0.22)] hover:bg-gold-hover hover:shadow-[0_4px_14px_rgba(244,180,0,0.3)] hover:-translate-y-0.5;
   }
 
   .btn-gold .arrow {
@@ -151,11 +179,7 @@
   }
 
   .btn-gold-outline {
-    @apply border-white/25 bg-white/5 text-white backdrop-blur-sm hover:border-gold hover:bg-white/10 hover:text-gold hover:-translate-y-0.5;
-  }
-
-  .btn-cyan {
-    @apply border-cyan bg-cyan text-ink shadow-[0_2px_8px_rgba(93,225,230,0.25)] hover:bg-cyan-hover hover:border-cyan-hover hover:-translate-y-0.5;
+    @apply border-white/25 bg-white/5 text-white backdrop-blur-sm hover:border-[#50CDE2] hover:bg-white/10 hover:text-[#50CDE2] hover:-translate-y-0.5;
   }
 
   .btn-solid {
@@ -163,28 +187,28 @@
   }
 
   .btn-outline {
-    @apply border-line-strong bg-transparent text-ink hover:border-ink hover:bg-ink hover:text-paper hover:-translate-y-0.5;
+    @apply border-line-strong bg-transparent text-ink hover:border-[#0C2E3A] hover:bg-[#0C2E3A] hover:text-paper hover:-translate-y-0.5;
   }
 
   .text-link {
-    @apply inline-flex items-center gap-1.5 border-0 border-b border-line-strong bg-transparent p-0 text-left font-sans text-[0.88rem] font-semibold leading-[1.5] text-ink transition-all duration-200 hover:border-gold-deep hover:text-gold-deep;
+    @apply inline-flex items-center gap-1.5 border-0 border-b border-line-strong bg-transparent p-0 text-left font-sans text-[0.88rem] font-semibold leading-[1.5] text-ink transition-all duration-200 hover:border-[#50CDE2] hover:text-[#0C2E3A];
   }
 
   .skip-link {
     @apply fixed left-2.5 top-2.5 z-[1000] -translate-y-[150%] bg-ink px-[18px] py-3 text-[13px] text-paper transition-transform duration-200 focus:translate-y-0;
   }
 
-  /* Header */
+  /* Header — Single Master Navbar */
   .site-header {
-    @apply sticky top-0 z-[100] border-b border-line/80 bg-paper/90 backdrop-blur-xl transition-all duration-300;
+    @apply fixed top-0 left-0 right-0 z-[100] border-b border-transparent bg-transparent transition-all duration-300;
   }
 
   .site-header .header-inner {
-    @apply min-h-[76px] transition-[min-height] duration-300;
+    @apply min-h-[76px];
   }
 
   .site-header.is-scrolled {
-    @apply border-line shadow-xs;
+    @apply border-white/10 bg-[#0C2E3A]/95 shadow-xl backdrop-blur-xl;
   }
 
   .site-header.is-scrolled .header-inner {
@@ -192,11 +216,11 @@
   }
 
   .menu-toggle {
-    @apply flex size-11 flex-col items-center justify-center gap-1.5 border border-line bg-white/60 p-0 min-[1120px]:hidden cursor-pointer rounded-full transition-colors hover:bg-white;
+    @apply flex size-10 flex-col items-center justify-center gap-1.5 border border-white/20 bg-white/10 p-0 min-[1120px]:hidden cursor-pointer rounded-full transition-colors hover:bg-white/20;
   }
 
   .menu-toggle span {
-    @apply block h-0.5 w-[20px] bg-ink transition-transform duration-200;
+    @apply block h-0.5 w-[18px] bg-white transition-transform duration-200;
   }
 
   .menu-toggle:hover span:first-child {
@@ -225,7 +249,7 @@
   }
 
   .modal-panel {
-    @apply max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-[2rem] border border-line bg-paper p-6 sm:p-9 shadow-[0_24px_72px_rgba(0,0,0,0.2)] transition-transform duration-300 scale-95;
+    @apply max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-[2rem] bg-paper p-6 sm:p-9 shadow-[0_24px_72px_rgba(0,0,0,0.28)] transition-transform duration-300 scale-95;
   }
 
   .modal-backdrop.open .modal-panel {
@@ -238,7 +262,7 @@
   }
 
   .field label {
-    @apply text-[0.68rem] font-bold uppercase leading-[1.5] tracking-[0.14em] text-ink;
+    @apply text-[0.72rem] font-bold uppercase leading-[1.5] tracking-[0.14em] text-ink;
   }
 
   .field label span {
@@ -281,26 +305,23 @@
     @apply border-t border-line pt-3.5 text-[0.86rem] leading-[1.6] text-ink font-medium;
   }
 
+  .form-status.is-error {
+    color: var(--color-error);
+  }
+
   .form-status:empty {
     @apply hidden;
   }
 
-  /* Smart Mobile Floating Bar with Auto-Hide on Scroll */
-  .mobile-bar {
+  /* Mobile Floating WhatsApp Action Button (Circular with Logo Only) */
+  .whatsapp-float {
     @apply hidden;
   }
 
   @media (max-width: 767px) {
-    .mobile-bar {
-      @apply fixed inset-x-4 bottom-4 z-[90] flex items-center gap-2.5 rounded-full border border-line-strong/20 bg-paper/95 p-1.5 shadow-[0_8px_32px_rgba(0,0,0,0.18)] backdrop-blur-xl transition-all duration-300;
-    }
-
-    .mobile-bar.bar-hidden {
-      @apply translate-y-[150%] opacity-0 pointer-events-none;
-    }
-
-    body {
-      padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px));
+    .whatsapp-float {
+      @apply fixed right-5 z-[90] flex size-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_6px_24px_rgba(37,211,102,0.45)] transition-all duration-300 hover:scale-110 hover:shadow-[0_8px_30px_rgba(37,211,102,0.6)] active:scale-95;
+      bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px));
     }
   }
 
