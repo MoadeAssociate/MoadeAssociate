@@ -12,11 +12,11 @@
       var ogUrl = document.getElementById('og-url');
       if (ogUrl) ogUrl.setAttribute('content', 'https://moadeassociates.com/');
       var ogImg = document.getElementById('og-image');
-      if (ogImg) ogImg.setAttribute('content', 'https://moadeassociates.com/assets/images/partner-lead.jpg');
+      if (ogImg) ogImg.setAttribute('content', 'https://moadeassociates.com/assets/images/og-image.jpg');
       var ogSec = document.getElementById('og-image-secure');
-      if (ogSec) ogSec.setAttribute('content', 'https://moadeassociates.com/assets/images/partner-lead.jpg');
+      if (ogSec) ogSec.setAttribute('content', 'https://moadeassociates.com/assets/images/og-image.jpg');
       var twImg = document.getElementById('tw-image');
-      if (twImg) twImg.setAttribute('content', 'https://moadeassociates.com/assets/images/partner-lead.jpg');
+      if (twImg) twImg.setAttribute('content', 'https://moadeassociates.com/assets/images/og-image.jpg');
     }
   } catch (e) {}
 
