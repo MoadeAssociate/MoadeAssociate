@@ -456,7 +456,7 @@
             <!-- Card 2: Startups & Entrepreneurship Support (Featured Anchor Dark Slate Card) -->
             <div class="service-card w-[310px] sm:w-[360px] shrink-0 rounded-2xl border border-white/20 bg-[#08202A] p-6 sm:p-7 text-white shadow-2xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl relative">
               <div>
-                <span class="text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[#50CDE2]">Startups &amp; Scaleups</span>
+                <span class="text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[#50CDE2]">Startups Advisory &amp; Scaleups</span>
                 <h3 class="mt-2 text-[1.28rem] font-extrabold leading-[1.25] text-white tracking-tight">Startups &amp; Entrepreneurship Support</h3>
                 
                 <div class="my-4 overflow-hidden rounded-xl border border-white/10">
@@ -484,22 +484,22 @@
             <!-- Card 3: Creative Industries & IP Strategy (Crisp White Card) -->
             <div class="service-card w-[310px] sm:w-[360px] shrink-0 rounded-2xl bg-white p-6 sm:p-7 text-ink shadow-[0_8px_28px_rgba(15,26,36,0.08),0_2px_8px_rgba(15,26,36,0.06)] flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_40px_rgba(15,26,36,0.14)]">
               <div>
-                <span class="text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[#0C2E3A]">Creative &amp; IP</span>
-                <h3 class="mt-2 text-[1.28rem] font-extrabold leading-[1.25] text-ink tracking-tight">Creative Industries &amp; IP Strategy</h3>
+                <span class="text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[#0C2E3A]">Entertainment Law &amp; IP</span>
+                <h3 class="mt-2 text-[1.28rem] font-extrabold leading-[1.25] text-ink tracking-tight">Entertainment Law &amp; Creative IP Strategy</h3>
                 
                 <div class="my-4 overflow-hidden rounded-xl border border-line-strong/10">
                   <picture>
                     <source srcset="assets/images/service-creative-ip.webp" type="image/webp">
-                    <img src="assets/images/service-creative-ip.jpg" alt="Creative Industries &amp; IP Strategy — Music studio and creative production" width="640" height="384" loading="lazy" decoding="async" class="aspect-[16/10] w-full object-cover transition-transform duration-500 ease-out hover:scale-105">
+                    <img src="assets/images/service-creative-ip.jpg" alt="Entertainment Law &amp; Creative IP Strategy — Music studio and creative production" width="640" height="384" loading="lazy" decoding="async" class="aspect-[16/10] w-full object-cover transition-transform duration-500 ease-out hover:scale-105">
                   </picture>
                 </div>
 
                 <div class="mt-1">
                   <span class="block text-[0.7rem] font-bold uppercase tracking-wider text-muted mb-2.5">What we offer:</span>
                   <ul class="space-y-2 text-xs font-semibold text-ink">
+                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Entertainment Law &amp; Talent Representation</li>
                     <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Copyrights, Trademarks &amp; Licensing</li>
                     <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Content Distribution &amp; Monetization Agreements</li>
-                    <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Artist &amp; Talent Representation</li>
                     <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>IP Portfolio Strategy &amp; Creative Structures</li>
                     <li class="flex items-center gap-2.5"><span class="size-1.5 shrink-0 rounded-full bg-[#50CDE2]"></span>Record Label Set-Up &amp; Operations</li>
                   </ul>
@@ -666,7 +666,7 @@
           </div>
           
           <div class="flex items-center gap-3">
-            <span class="text-xs font-bold tracking-[0.14em] text-ink tabular-nums" id="t-count" aria-live="polite">01 / 12</span>
+            <span class="text-xs font-bold tracking-[0.14em] text-ink tabular-nums" id="t-count" aria-live="polite">01 / 15</span>
             <button type="button" class="grid size-11 place-items-center rounded-[10px] border border-line-strong/30 bg-white text-ink shadow-xs transition-all duration-200 hover:border-[#141A21] hover:bg-[#141A21] hover:text-white hover:scale-105 active:scale-95 cursor-pointer" id="testimonial-prev" aria-label="Previous testimonial">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 19l-7-7 7-7"/></svg>
             </button>
@@ -692,6 +692,7 @@
               <div class="pt-4 border-t border-line">
                 <p class="font-bold text-ink" id="t-author"></p>
                 <p class="text-xs text-muted" id="t-role"></p>
+                <div id="t-badges" class="hidden items-center gap-1.5 mt-2.5 flex-wrap" aria-label="Affiliated Brands"></div>
               </div>
             </div>
 
@@ -709,16 +710,49 @@
         <!-- Client Logo Strip -->
         <div class="mt-12 border-t border-line pt-8">
           <p class="text-center text-[0.7rem] font-bold uppercase tracking-[0.18em] text-muted mb-6">Brands &amp; founders we work with, across Africa</p>
-          <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-12 opacity-80">
-            <img src="assets/images/logo-bme-hd.png" alt="BME Records" loading="lazy" decoding="async" class="h-8 w-auto object-contain">
-            <img src="assets/images/logo-artcation.png" alt="Artcation" loading="lazy" decoding="async" class="h-8 w-auto object-contain">
-            <img src="assets/images/logo-elara.png" alt="Elara Development" loading="lazy" decoding="async" class="h-6 w-auto object-contain">
-            <img src="assets/images/logo-cloudtoch.jpg" alt="Cloudtoch Integrations" loading="lazy" decoding="async" class="h-6 w-auto object-contain">
-            <img src="assets/images/gaise-baba-logo.png" alt="Gaise Baba" loading="lazy" decoding="async" class="h-8 w-auto object-contain">
-            <img src="assets/images/logo-cobolt.jpg" alt="Cobalt" loading="lazy" decoding="async" class="h-7 w-auto object-contain">
-            <img src="assets/images/logo-squaredlab.jpg" alt="Squared Lab" loading="lazy" decoding="async" class="h-7 w-auto object-contain">
-            <img src="assets/images/logo-numio.jpg" alt="Numio" loading="lazy" decoding="async" class="h-7 w-auto object-contain">
-            <img src="assets/images/logo-ahava.jpg" alt="Ahava Living" loading="lazy" decoding="async" class="h-7 w-auto object-contain">
+          <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 lg:gap-8">
+            <div class="flex items-center justify-center p-2 rounded-xl bg-white border border-line shadow-2xs hover:border-[#50CDE2]/50 hover:shadow-xs transition-all duration-200" title="The Yellow Oak">
+              <img src="assets/images/logo-yellow-oak.png" alt="The Yellow Oak" loading="lazy" decoding="async" class="h-9 sm:h-10 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-2 rounded-xl bg-white border border-line shadow-2xs hover:border-[#50CDE2]/50 hover:shadow-xs transition-all duration-200" title="Iconic Stuff">
+              <img src="assets/images/logo-iconic-stuff.png" alt="Iconic Stuff" loading="lazy" decoding="async" class="h-9 sm:h-10 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-2 rounded-xl bg-white border border-line shadow-2xs hover:border-[#50CDE2]/50 hover:shadow-xs transition-all duration-200" title="Ashtag">
+              <img src="assets/images/logo-ashtag.png" alt="Ashtag" loading="lazy" decoding="async" class="h-9 sm:h-10 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-2 rounded-xl bg-white border border-line shadow-2xs hover:border-[#50CDE2]/50 hover:shadow-xs transition-all duration-200" title="Street Church">
+              <img src="assets/images/logo-street-church.png" alt="Street Church" loading="lazy" decoding="async" class="h-9 sm:h-10 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-2 rounded-xl bg-white border border-line shadow-2xs hover:border-[#50CDE2]/50 hover:shadow-xs transition-all duration-200" title="RD Studios / Prinda">
+              <img src="assets/images/logo-rd-studios.png" alt="RD Studios / Prinda" loading="lazy" decoding="async" class="h-9 sm:h-10 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center px-3 py-2 rounded-xl bg-white border border-line shadow-2xs hover:border-[#50CDE2]/50 hover:shadow-xs transition-all duration-200" title="BME Records">
+              <img src="assets/images/logo-bme-hd.png" alt="BME Records" loading="lazy" decoding="async" class="h-7 sm:h-8 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center px-3 py-2 rounded-xl bg-white border border-line shadow-2xs hover:border-[#50CDE2]/50 hover:shadow-xs transition-all duration-200" title="Gaise Baba">
+              <img src="assets/images/gaise-baba-logo.png" alt="Gaise Baba" loading="lazy" decoding="async" class="h-7 sm:h-8 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center p-2 rounded-xl bg-white border border-line shadow-2xs hover:border-[#50CDE2]/50 hover:shadow-xs transition-all duration-200" title="Artcation">
+              <img src="assets/images/logo-artcation.png" alt="Artcation" loading="lazy" decoding="async" class="h-8 sm:h-9 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center px-3 py-2 rounded-xl bg-white border border-line shadow-2xs hover:border-[#50CDE2]/50 hover:shadow-xs transition-all duration-200" title="Elara Development">
+              <img src="assets/images/logo-elara.png" alt="Elara Development" loading="lazy" decoding="async" class="h-5 sm:h-6 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center px-3 py-2 rounded-xl bg-white border border-line shadow-2xs hover:border-[#50CDE2]/50 hover:shadow-xs transition-all duration-200" title="Cloudtoch Integrations">
+              <img src="assets/images/logo-cloudtoch.jpg" alt="Cloudtoch Integrations" loading="lazy" decoding="async" class="h-5 sm:h-6 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center px-3 py-2 rounded-xl bg-white border border-line shadow-2xs hover:border-[#50CDE2]/50 hover:shadow-xs transition-all duration-200" title="Cobalt Media Group">
+              <img src="assets/images/logo-cobolt.jpg" alt="Cobalt" loading="lazy" decoding="async" class="h-6 sm:h-7 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center px-3 py-2 rounded-xl bg-white border border-line shadow-2xs hover:border-[#50CDE2]/50 hover:shadow-xs transition-all duration-200" title="Squared Lab">
+              <img src="assets/images/logo-squaredlab.jpg" alt="Squared Lab" loading="lazy" decoding="async" class="h-6 sm:h-7 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center px-3 py-2 rounded-xl bg-white border border-line shadow-2xs hover:border-[#50CDE2]/50 hover:shadow-xs transition-all duration-200" title="Numio Technology">
+              <img src="assets/images/logo-numio.jpg" alt="Numio" loading="lazy" decoding="async" class="h-6 sm:h-7 w-auto object-contain">
+            </div>
+            <div class="flex items-center justify-center px-3 py-2 rounded-xl bg-white border border-line shadow-2xs hover:border-[#50CDE2]/50 hover:shadow-xs transition-all duration-200" title="Ahava Living">
+              <img src="assets/images/logo-ahava.jpg" alt="Ahava Living" loading="lazy" decoding="async" class="h-6 sm:h-7 w-auto object-contain">
+            </div>
           </div>
         </div>
 

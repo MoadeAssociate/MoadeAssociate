@@ -195,16 +195,47 @@
   /* 6. Testimonial Slider & Shuffler ---------------------------------------- */
   var testimonials = [
     {
+      author: 'Mr Tunde “TNT” Moriolari',
+      role: 'Managing Director & Entrepreneur — Multi-Business Portfolio',
+      mono: 'TNT',
+      quote: 'Working with MOADE Associates has been a great experience. From business registration and contract reviews to transaction negotiations and general legal support across our businesses, you and the team have been reliable, professional, and thorough. I appreciate having a team that understands our needs and provides the right guidance whenever we need it. Thank you so much.'
+    },
+    {
+      author: 'Mr Wang',
+      role: 'Private Client & Principal — 2-Year Strategic Legal Retainer',
+      mono: 'MW',
+      quote: 'I have worked with Moade Associates for about 2 years now; their service is professional, and they are always willing to provide additional advisory outside their scope of work. The quality of their actual work is exceptional as well with a listening ear to their clients to provide flexible agreements that can help further their business. I consider myself safe and protected with Moade by my side.'
+    },
+    {
+      author: 'Oreoluwa Oluwatobi',
+      role: 'The Yellow Oak · Iconic Stuff · Middle Men Publishing · Ashtag',
+      logo: 'assets/images/logo-yellow-oak.png',
+      badges: ['assets/images/logo-yellow-oak.png', 'assets/images/logo-iconic-stuff.png', 'assets/images/logo-ashtag.png'],
+      quote: 'I think working with your team has blown away my expectations, you guys have made us very comfortable with details & ensured ease of understanding complex issues.'
+    },
+    {
+      author: 'Street Church',
+      role: 'Creative Ministry & Youth Culture Community',
+      logo: 'assets/images/logo-street-church.png',
+      quote: 'Moade Associates understands creative vision and mission-driven initiatives. Their counsel gives our community the legal confidence to produce culture-shifting events, content, and partnerships across Africa.'
+    },
+    {
+      author: 'RD Studios / Prinda',
+      role: 'Film, Television & Creative Production Studios',
+      logo: 'assets/images/logo-rd-studios.png',
+      quote: 'Exceptional legal precision in production agreements, IP management, and talent structures. Moade Associates provides invaluable advisory that keeps our studio protected and poised for scale.'
+    },
+    {
+      author: 'Iconic Stuff Team',
+      role: 'Lifestyle, Apparel & Creative Brand',
+      logo: 'assets/images/logo-iconic-stuff.png',
+      quote: 'Moade Associates has guided our branding, commercial agreements, and vendor partnerships with absolute diligence and creative understanding.'
+    },
+    {
       author: 'Gaise Baba',
       role: 'Recording & Performing Artist, Cultural Leader',
       logo: 'assets/images/gaise-baba-logo.png',
       quote: 'Working with MOADE Associates has been one of the most defining decisions for my organization. Their support goes far beyond legal services, they bring clarity, structure, and strategic insight into every conversation. They understand the heart of my work, the purpose behind it, and the vision ahead. Whether it’s navigating complex agreements, shaping long-term strategy, or managing partnerships, MOADE Associates consistently delivers excellence with sincerity, depth, and precision. What I appreciate most is their ability to simplify complexity without reducing meaning, to protect my interests without stifling creativity, and to advise with both legal mastery and spiritual intelligence. MOADE Associates has become more than a legal partner; they are a trusted counsel and an essential part of how we build, grow, and move with integrity.'
-    },
-    {
-      author: 'Mr Wang',
-      role: 'Private Client — Multiple Business Ventures',
-      mono: 'MW',
-      quote: 'I have worked with Moade Associates for about 2 years now; their service is professional, and they are always willing to provide additional advisory outside their scope of work. The quality of their actual work is exceptional as well with a listening ear to their clients to provide flexible agreements that can help further their business. I consider myself safe and protected with Moade by my side.'
     },
     {
       author: 'Igwe Nancy',
@@ -219,22 +250,10 @@
       quote: 'Working with MOADE Associates has been one of the most seamless parts of building Artcation. From trademark registration to drafting partnership agreements, their attention to detail and understanding of creative businesses gave us the confidence to grow our brand the right way. They didn’t just handle the legalities, they understood our vision and helped protect it. Every document, every clause reflected the same care we put into our art. Having them on our side has been instrumental in shaping Artcation into the credible, future-ready brand it’s becoming.'
     },
     {
-      author: 'Oreoluwa Oluwatobi',
-      role: 'Yellow Oak · Iconic Stuff · Middle Men Publishing',
-      mono: 'OO',
-      quote: 'I think working with your team has blown away my expectations, you guys have made us very comfortable with details & ensured ease of understanding complex issues.'
-    },
-    {
       author: 'Elara Development Company Limited',
       role: 'Real Estate & Infrastructure Development',
       logo: 'assets/images/logo-elara.png',
       quote: 'Our company has worked with Moade Associates for several years, and their expertise in real estate law has been invaluable. They are highly competent, professional, and consistently deliver effective legal support. Their deep understanding of the real estate sector and proactive approach make them an essential partner in our projects.'
-    },
-    {
-      author: 'Mr Tunde “TNT” Moriolari',
-      role: 'Entrepreneur — Multi-Business Portfolio',
-      mono: 'TM',
-      quote: 'Working with MOADE Associates has been a great experience. From business registration and contract reviews to transaction negotiations and general legal support across our businesses, you and the team have been reliable, professional, and thorough. I appreciate having a team that understands our needs and provides the right guidance whenever we need it.'
     },
     {
       author: 'Cloudtoch Integrations',
@@ -307,6 +326,19 @@
           monoEl.textContent = item.mono || '';
           monoEl.style.display = '';
           logoEl.style.display = 'none';
+        }
+      }
+
+      var badgesEl = document.getElementById('t-badges');
+      if (badgesEl) {
+        if (item.badges && item.badges.length) {
+          badgesEl.innerHTML = '<span class="text-[0.65rem] font-bold uppercase tracking-wider text-muted mr-1">Brands:</span>' + item.badges.map(function (b) {
+            return '<img src="' + b + '" class="size-6 rounded-full border border-line bg-paper object-contain shadow-2xs" alt="Affiliated Brand">';
+          }).join('');
+          badgesEl.style.display = 'flex';
+        } else {
+          badgesEl.innerHTML = '';
+          badgesEl.style.display = 'none';
         }
       }
 
