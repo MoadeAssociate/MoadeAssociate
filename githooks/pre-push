@@ -1,0 +1,62 @@
+#!/bin/bash
+#
+# Hanoled workspace — pre-push hook (AGENTS.md Rules 2 & 3)
+# Hard enforcement installed via `git config core.hooksPath`.
+# 1. NEVER pushes to main/master — blocked at git level.
+# 2. Runs the quality gate; push is refused until everything passes.
+#
+# Bypassing (--no-verify, editing, disabling) violates AGENTS.md Rule 4.
+#
+set -u
+
+echo ""
+echo "════════ Hanoled pre-push guard ════════"
+
+own_dir="$(cd "$(dirname "$0")" && pwd -P)"
+
+BLOCKED=0
+HAS_BRANCH_PUSH=0
+LAST_LOCAL_SHA=""
+LAST_REMOTE_SHA=""
+
+while read -r local_ref local_sha remote_ref remote_sha; do
+  # --- 1. Branch guard: main/master is never pushed, and never deleted ---
+  case "$remote_ref" in
+    refs/heads/main|refs/heads/master)
+      BLOCKED=1
+      echo "BLOCKED: push to $remote_ref is forbidden (AGENTS.md Rule 2 — everything ships through dev)."
+      ;;
+  esac
+  # count branch pushes for the gate
+  case "$local_ref" in
+    refs/heads/*)
+      HAS_BRANCH_PUSH=1
+      LAST_LOCAL_SHA="$local_sha"
+      LAST_REMOTE_SHA="$remote_sha"
+      echo "→ pushing $(git branch --show-current 2>/dev/null): $remote_ref"
+      ;;
+  esac
+done
+
+if [ "$BLOCKED" -eq 1 ]; then
+  echo ""
+  echo "✋ PUSH BLOCKED by branch guard. Never push to main/master."
+  exit 1
+fi
+
+# --- 2. Quality gate on the pushed commit ---
+if [ "$HAS_BRANCH_PUSH" -eq 0 ]; then
+  echo "SKIP: no branch push (tag-only push) — no gate run."
+  exit 0
+fi
+
+bash "$own_dir/run-quality-gate.sh" "$LAST_LOCAL_SHA" "$LAST_REMOTE_SHA"
+GATE_RC=$?
+if [ "$GATE_RC" -ne 0 ]; then
+  echo ""
+  echo "✋ PUSH BLOCKED by quality gate (exit $GATE_RC)."
+  echo "   Fix every failure, commit again, then push."
+  exit 1
+fi
+echo "Gate passed — push allowed."
+exit 0
