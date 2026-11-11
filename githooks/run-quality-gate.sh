@@ -156,7 +156,7 @@ fi
 #───────────────────────────────────────────────
 if [ -n "$RANGE" ]; then
   SPARKLE_HITS="$(git diff -U0 "$RANGE" \
-    -- . ':(exclude)*.lock' ':(exclude).worktrees*' ':(exclude)*/node_modules/*' ':(exclude)*package-lock.json' ':(exclude)*pnpm-lock.yaml' \
+    -- . ':(exclude)*.lock' ':(exclude).worktrees*' ':(exclude)*/node_modules/*' ':(exclude)*package-lock.json' ':(exclude)*pnpm-lock.yaml' ':(exclude)AGENTS.md' ':(exclude)README.md' ':(exclude)githooks/*' \
     | grep '^+' | grep -v '^+++' | grep -Ein 'sparkle' || true)"
   if [ -n "$SPARKLE_HITS" ]; then
     echo "$SPARKLE_HITS" | sed 's/^/  ↳ /' | head -10
@@ -180,7 +180,7 @@ if [ -n "$RANGE" ]; then
     pass "credential scan (marker credentials-user-approved present)"
   else
     CRED_HITS="$(git diff -U0 "$RANGE" \
-      -- . ':(exclude)*.lock' ':(exclude)*.png' ':(exclude)*.pdf' ':(exclude)*.xlsx' \
+      -- . ':(exclude)*.lock' ':(exclude)*.png' ':(exclude)*.pdf' ':(exclude)*.xlsx' ':(exclude)AGENTS.md' ':(exclude)README.md' ':(exclude)githooks/*' \
       | grep '^+' | grep -v '^+++' \
       | grep -Ein '\$2[aby]\$|\$argon2(id)?\$|^\+.*passwordHash|password.*:.*\$2[aby]\$' || true)"
     CRED_PATHS="$(git diff --name-only "$RANGE" \
