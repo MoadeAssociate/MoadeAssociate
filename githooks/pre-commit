@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# Hanoled workspace — pre-commit hook (AGENTS.md Rule 2)
+# Blocks committing directly on main/master of any workspace repo.
+# Work happens on dev (or a feature branch off dev).
+#
+set -u
+
+BRANCH="$(git branch --show-current 2>/dev/null || true)"
+case "$BRANCH" in
+  main|master)
+    echo ""
+    echo "✋ COMMIT BLOCKED: you are on '$BRANCH'."
+    echo "   AGENTS.md Rule 2 forbids committing to $BRANCH in the Hanoled workspace."
+    echo "   Switch to dev first:  git checkout dev  (then branch/merge as needed)."
+    exit 1
+    ;;
+  *) exit 0 ;;
+esac
