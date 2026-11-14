@@ -284,6 +284,12 @@
       role: 'Hospitality & Lifestyle Brand',
       logo: 'assets/images/logo-ahava.jpg',
       quote: 'A trustworthy partner who brings diligence and proactive foresight to every agreement. Highly dependable and strategic counsel.'
+    },
+    {
+      author: 'Mrs Praise',
+      role: 'Principal & Executive — Eureka',
+      mono: 'PE',
+      quote: 'I didn’t really understand the absolute need to have a lawyer and how much ease that decision could bring until that first call with MOADE Associates. I cannot overemphasise how important it is to have a team of seasoned lawyers handling your affairs. I don’t worry about so many things once I speak to MOADE Associates about my ventures. They provide sound counsel and quality documents. The Managing Partner, MJ, has wisdom that goes beyond just representing your legal interests; she also demonstrates a high level of intelligence in ensuring that a client has a cordial relationship with whoever they’re working with. Apart from the efficiency and urgency with which the team delivers on requests, I just couldn’t help but notice how each client is treated with respect. Every client is a big deal to them, and I get that sense every time I engage them.'
     }
   ];
 
