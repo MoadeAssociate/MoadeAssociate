@@ -11,9 +11,10 @@
 
 MOADE Associates helps businesses, creatives, and entrepreneurs build the legal systems and structures they need to grow strategically and sustainably. The firm provides forward-thinking counsel across corporate law, intellectual property, startups, media/entertainment, and dispute resolution.
 
-- **Location:** Lekki, Lagos, Nigeria
+- **Location:** C101, 19B Agunbiade Street, Ologolo, Lekki, Lagos, Nigeria
 - **Operating Hours:** Monday – Friday, 9:00 AM – 4:00 PM (WAT)
 - **Direct Channels:** WhatsApp (`+234 815 338 0312`) · Phone (`+234 816 552 8752`) · Email (`admin@moadeassociates.com`)
+- **Official Social Channels:** [Instagram](https://www.instagram.com/moade_associates) · [LinkedIn](https://www.linkedin.com/company/moade-associates/) · [YouTube](https://youtube.com/@moadeassociates)
 
 ---
 
