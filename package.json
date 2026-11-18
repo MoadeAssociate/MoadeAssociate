@@ -4,15 +4,16 @@
   "private": true,
   "description": "MOADE Associates — Legal Practice and Consulting Firm",
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./dist/styles.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./dist/styles.css --minify",
+    "dev": "node scripts/build-css.mjs --watch",
+    "build": "node scripts/build-css.mjs",
     "start": "npx serve ."
   },
   "engines": {
     "node": ">=20.0.0"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.3.3",
-    "tailwindcss": "^4.3.3"
+    "@tailwindcss/node": "4.3.3",
+    "@tailwindcss/oxide": "4.3.3",
+    "tailwindcss": "4.3.3"
   }
 }
